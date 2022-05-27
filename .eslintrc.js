@@ -25,6 +25,7 @@ module.exports = {
   // "eslint-plugin-import": "^2.26.0",
   // "eslint-plugin-react": "^7.30.0",
   // "eslint-plugin-react-hooks": "^4.5.0",
+  // glob functionally: https://github.com/isaacs/node-glob
   overrides: [{ files: ["**/*.js?(x)", "**/*.ts?(x)"], extends: ["taro"] }],
   // 方式二：
   // 不使用taro配置包，自定义lint ts文件
@@ -46,4 +47,4 @@ module.exports = {
   //     excludedFiles: "*.test.ts",
   //   },
   // ],
-}
+};
