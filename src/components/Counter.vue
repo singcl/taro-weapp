@@ -6,10 +6,10 @@
 </template>
 
 <script>
-import { useCounterStore } from "../stores/counter";
+import { useCounterStore } from '../stores/counter';
 
 export default {
-  name: "XmCounter",
+  name: 'XmCounter',
   setup() {
     const counter = useCounterStore();
 
