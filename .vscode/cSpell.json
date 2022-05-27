@@ -27,8 +27,11 @@
   "showStatus": true,
   // Words to add to dictionary for a workspace.
   "words": [
+    "alipay",
     "Pinia",
-    "styl"
+    "quickapp",
+    "styl",
+    "weapp"
   ],
   // Enable / Disable compound words like 'errormessage'
   "allowCompoundWords": false,
