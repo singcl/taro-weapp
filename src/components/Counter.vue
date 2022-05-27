@@ -6,34 +6,36 @@
 </template>
 
 <script>
-import { useCounterStore } from '../stores/counter'
+import { useCounterStore } from "../stores/counter";
 
 export default {
+  name: "XmCounter",
   setup() {
-    const counter = useCounterStore()
+    const counter = useCounterStore();
 
     const onAdd = () => {
-      counter.count++
+      counter.count++;
 
       // with autocompletion ✨
       // counter.$patch({count: counter.count + 1})
 
       // or using an action instead
       // counter.increment()
-    }
+    };
 
     return {
       counter,
-      onAdd
-    }
-  }
-}
+      onAdd,
+    };
+  },
+};
 </script>
 
 <style>
 .title {
   font-size: 32px;
 }
+
 .button {
   border: 1px solid lightgray;
   padding: 5px 10px;
