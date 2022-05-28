@@ -1,6 +1,6 @@
 {
   "name": "my-taro-app",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "description": "一个vue3小程序",
   "templateInfo": {
@@ -29,7 +29,8 @@
     "eslint": "eslint --ext .vue --ext .js --ext .jsx --ext .ts --ext .tsx --fix src/",
     "prepare": "husky install",
     "tsc": "vue-tsc --noEmit --skipLibCheck",
-    "cz": "cz"
+    "cz": "cz",
+    "release": "standard-version -- --prerelease alpha"
   },
   "browserslist": [
     "last 3 versions",
@@ -79,6 +80,7 @@
     "eslint-plugin-vue": "^8.0.0",
     "husky": "^8.0.0",
     "prettier": "^2.6.2",
+    "standard-version": "^9.5.0",
     "stylelint": "9.3.0",
     "typescript": "^4.7.2",
     "vue-loader": "^16.8.3",
