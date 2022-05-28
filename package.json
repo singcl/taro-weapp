@@ -2,7 +2,7 @@
   "name": "my-taro-app",
   "version": "1.0.0",
   "private": true,
-  "description": "",
+  "description": "一个vue3小程序",
   "templateInfo": {
     "name": "vue3-pinia",
     "typescript": true,
@@ -35,10 +35,21 @@
     "Android >= 4.1",
     "ios >= 8"
   ],
-  "author": "",
+  "author": "singcl",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singcl/taro.git"
+  },
+  "keywords": [
+    "vue3",
+    "taro",
+    "pinia",
+    "miniproress"
+  ],
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
+    "@nutui/nutui-taro": "^3.1.20",
     "@tarojs/components": "3.4.9",
     "@tarojs/plugin-framework-vue3": "3.4.9",
     "@tarojs/runtime": "3.4.9",
@@ -55,6 +66,8 @@
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "babel-preset-taro": "3.4.9",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-taro": "3.4.9",
@@ -69,5 +82,10 @@
     "typescript": "^4.7.2",
     "vue-loader": "^16.8.3",
     "vue-tsc": "^0.35.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
