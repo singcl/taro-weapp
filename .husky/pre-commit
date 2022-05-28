@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "---eslint start---"
+npm run eslint
+echo "---eslint end---"
+
+echo "---ts lint start---"
+npm run tsc
+echo "---ts lint end---"
