@@ -1,6 +1,6 @@
 {
   "name": "my-taro-app",
-  "version": "2.0.0",
+  "version": "0.0.1-alpha.0",
   "private": true,
   "description": "一个vue3小程序",
   "templateInfo": {
@@ -30,7 +30,7 @@
     "prepare": "husky install",
     "tsc": "vue-tsc --noEmit --skipLibCheck",
     "cz": "cz",
-    "release": "standard-version -- --prerelease alpha"
+    "release": "standard-version --prerelease alpha"
   },
   "browserslist": [
     "last 3 versions",
