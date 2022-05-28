@@ -28,7 +28,8 @@
     "eslint:fix": "eslint --ext .vue --ext .js --ext .jsx --ext .ts --ext .tsx --fix src/",
     "eslint": "eslint --ext .vue --ext .js --ext .jsx --ext .ts --ext .tsx --fix src/",
     "prepare": "husky install",
-    "tsc": "vue-tsc --noEmit --skipLibCheck"
+    "tsc": "vue-tsc --noEmit --skipLibCheck",
+    "cz": "cz"
   },
   "browserslist": [
     "last 3 versions",
