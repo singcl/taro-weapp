@@ -2,6 +2,8 @@
 # Why exec < /dev/tty? By default, git hooks are not interactive.
 # This command allows the user to use their terminal to interact with Commitizen during the hook.
 # https://github.com/commitizen/cz-cli#making-your-repo-commitizen-friendly
-echo "😊😊 commitizen..."
-exec < /dev/tty && npx cz --hook || true
-echo "✨✨Commitizen Success!"
+
+# npm script 已配置 npm run cz，这里就不用再重复执行了
+# echo "😊😊 commitizen..."
+# exec < /dev/tty && npx cz --hook || true
+# echo "✨✨Commitizen Success!"
