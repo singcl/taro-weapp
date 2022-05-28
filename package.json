@@ -83,6 +83,11 @@
     "vue-loader": "^16.8.3",
     "vue-tsc": "^0.35.0"
   },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
