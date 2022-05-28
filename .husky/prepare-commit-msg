@@ -2,4 +2,6 @@
 # Why exec < /dev/tty? By default, git hooks are not interactive.
 # This command allows the user to use their terminal to interact with Commitizen during the hook.
 # https://github.com/commitizen/cz-cli#making-your-repo-commitizen-friendly
+echo "😊😊 commitizen..."
 exec < /dev/tty && npx cz --hook || true
+echo "✨✨Commitizen Success!"
