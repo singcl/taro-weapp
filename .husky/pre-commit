@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "---eslint start---"
+echo "😊😊 eslint..."
 npm run eslint
-echo "---eslint end---"
+echo "✨✨Eslint Success!"
 
-echo "---ts lint start---"
+echo "😊😊 Vue 3 command line Type-Checking tool base on IDE plugin Volar."
 npm run tsc
-echo "---ts lint end---"
+echo "✨✨Type-Checking Success!"
