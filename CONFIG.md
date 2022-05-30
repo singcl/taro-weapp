@@ -14,6 +14,8 @@ https://git-scm.com/docs/git-config#_configuration_file
 git config --list --show-origin
 # 查看所有配置以及配置的范围
 git config --list --show-scope
+# 查看global 配置
+git config --global --list
 ```
 
 设置代理和删除代理
