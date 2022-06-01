@@ -1,3 +1,6 @@
+/* eslint-disable import/no-commonjs */
+const path = require('path');
+
 const config = {
   projectName: 'my-taro-app',
   date: '2022-5-22',
@@ -6,6 +9,9 @@ const config = {
     640: 2.34 / 2,
     750: 1,
     828: 1.81 / 2,
+  },
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src'),
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
