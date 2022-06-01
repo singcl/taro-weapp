@@ -1,6 +1,7 @@
 <template>
   <view class="index">
     <Counter />
+    <button type="primary">主要按钮</button>
   </view>
 </template>
 

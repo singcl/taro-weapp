@@ -28,10 +28,14 @@
   // Words to add to dictionary for a workspace.
   "words": [
     "alipay",
+    "nutui",
     "Pinia",
     "quickapp",
+    "singcl",
     "styl",
-    "weapp"
+    "tarojs",
+    "weapp",
+    "xmiles"
   ],
   // Enable / Disable compound words like 'errormessage'
   "allowCompoundWords": false,
