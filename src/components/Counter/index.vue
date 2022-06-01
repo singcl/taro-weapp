@@ -1,12 +1,14 @@
 <template>
   <view>
-    <text class="title">{{ counter.count }}</text>
-    <view class="button" @tap="onAdd">ADD</view>
+    <text :class="styles['title']">{{ counter.count }}</text>
+    <button type="warn" :class="styles['button']" @tap="onAdd">ADD</button>
   </view>
 </template>
 
 <script>
-import { useCounterStore } from '../stores/counter';
+import { useCounterStore } from '@/stores/counter';
+// import { reactive, computed } from 'vue';
+import styles from './index.module.styl';
 
 export default {
   name: 'XmCounter',
@@ -26,18 +28,8 @@ export default {
     return {
       counter,
       onAdd,
+      styles,
     };
   },
 };
 </script>
-
-<style>
-.title {
-  font-size: 32px;
-}
-
-.button {
-  border: 1px solid lightgray;
-  padding: 5px 10px;
-}
-</style>
