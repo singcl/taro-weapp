@@ -2,6 +2,8 @@
 // https://github.com/NervJS/taro/blob/next/packages/babel-preset-taro/README.md
 /* eslint-disable import/no-commonjs */
 module.exports = {
+  // See name normalization for more specifics on configuring the path of a plugin or preset.
+  // https://babel.dev/docs/en/options#name-normalization
   presets: [
     [
       'taro',
