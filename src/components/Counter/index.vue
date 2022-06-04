@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { useCounterStore } from '@/stores/counter';
+import { useCounterStore } from '@/stores';
 // import { reactive, computed } from 'vue';
 import styles from './index.module.styl';
 
