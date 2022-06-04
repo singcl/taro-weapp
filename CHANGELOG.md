@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0-alpha.1](https://github.com/singcl/taro/compare/v0.1.0-alpha.0...v0.1.0-alpha.1) (2022-06-04)
+
+
+### Features
+
+* **icons:** add tarba icons ([63fb602](https://github.com/singcl/taro/commit/63fb602157ac23730076c116fd26db7cf6dcb044))
+* **pages:** add decrement button ([c8b754f](https://github.com/singcl/taro/commit/c8b754f8fab1f3889d5ebc8157fdfd56f59f4b59))
+* **pages:** add new page min ([253ea27](https://github.com/singcl/taro/commit/253ea27810d174b2b0e1df45d4ed3d8526dd021b))
+
+
+### Bug Fixes
+
+* **components:** the component`s name props is must the used compoent name ([f34e9ea](https://github.com/singcl/taro/commit/f34e9eaa77c3e04c39f1d43855136a754bbd1fc6))
+* **pages:** div is not available in miniproress ([9813293](https://github.com/singcl/taro/commit/981329328832a82d02e53c7685ec1279c3d5f2be))
+
 ## 0.1.0-alpha.0 (2022-06-02)
 
 
