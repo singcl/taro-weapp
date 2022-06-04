@@ -11,6 +11,12 @@ const config = {
     828: 1.81 / 2,
   },
   alias: {
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/stores': path.resolve(__dirname, '..', 'src/stores'),
+    '@/utils': path.resolve(__dirname, '..', 'src/utils'),
+    '@/assets': path.resolve(__dirname, '..', 'src/assets'),
+    '@/package': path.resolve(__dirname, '..', 'package.json'),
+    '@/project': path.resolve(__dirname, '..', 'project.config.json'),
     '@': path.resolve(__dirname, '..', 'src'),
   },
   sourceRoot: 'src',
