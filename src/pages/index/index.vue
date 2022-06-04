@@ -7,7 +7,7 @@
 
 <script>
 import styles from './index.module.styl';
-import Counter from '../../components/Counter';
+import Counter from '@/components/Counter';
 
 export default {
   name: 'XmIndex',
