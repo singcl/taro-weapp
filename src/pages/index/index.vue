@@ -1,18 +1,18 @@
 <template>
   <view class="index">
-    <Counter />
+    <XmCounter />
     <button type="primary" :class="styles['button-sp-area']">主要按钮</button>
   </view>
 </template>
 
 <script>
 import styles from './index.module.styl';
-import Counter from '@/components/Counter';
+import XmCounter from '@/components/XmCounter';
 
 export default {
   name: 'XmIndex',
   components: {
-    Counter,
+    XmCounter,
   },
   computed: {
     styles: () => styles,
