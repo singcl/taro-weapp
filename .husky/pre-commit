@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
+# @see #!/bin/bash 和 #!/usr/bin/env bash 的区别
+# @see https://blog.csdn.net/qq_37164975/article/details/106181500
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "😊😊 eslint..."
@@ -8,4 +10,3 @@ echo "✨✨Eslint Success!"
 echo "😊😊 Vue 3 command line Type-Checking tool base on IDE plugin Volar."
 npm run tsc
 echo "✨✨Type-Checking Success!"
-
