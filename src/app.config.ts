@@ -1,5 +1,5 @@
 export default {
-  pages: ['pages/index/index', 'pages/mine/index'],
+  pages: ['pages/index/index', 'pages/functional/index', 'pages/mine/index'],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
@@ -20,9 +20,15 @@ export default {
       },
       {
         pagePath: 'pages/mine/index',
+        iconPath: 'assets/icons/mine_default.png',
+        selectedIconPath: 'assets/icons/mine_selected.png',
+        text: '个人中心',
+      },
+      {
+        pagePath: 'pages/functional/index',
         iconPath: 'assets/icons/settings_default.png',
         selectedIconPath: 'assets/icons/settings_selected.png',
-        text: '个人中心',
+        text: '设置',
       },
     ],
   },
