@@ -12,6 +12,27 @@ const App = createApp({
     console.log('----', options);
   },
   // 入口组件不需要实现 render 方法，即使实现了也会被 taro 所覆盖
+  //
+  onLaunch() {
+    // 登录
+    Taro.login({
+      async success(res) {
+        const { code } = res;
+        if (!code) {
+          console.log('獲取CODE失敗！' + res.errMsg);
+          return;
+        }
+        //发起网络请求
+        const loginRes = await Taro.request({
+          url: 'https://api.imcoco.top/blog',
+          data: {
+            code: res.code,
+          },
+        });
+        console.log('登录接口返回数据：', loginRes);
+      },
+    });
+  },
 });
 
 App.use(store);
