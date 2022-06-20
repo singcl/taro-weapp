@@ -15,7 +15,7 @@
   </view>
 </template>
 
-<script>
+<script lang="ts">
 import { useCounterStore } from '@/stores';
 // import { reactive, computed } from 'vue';
 import styles from './index.module.styl';
