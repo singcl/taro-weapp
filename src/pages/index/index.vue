@@ -37,6 +37,7 @@ export default {
         Taro.showLoading();
         const { data: loginData } = await Taro.request<LoginResponse>({
           // 使用局域网IP地址，方便在手机上也可以访问网络
+          // 手机上无法访问时，请检查防火墙是否关闭，或者是否配置正确
           url: 'http://192.168.2.101:9000/weixin/login',
           method: 'GET',
           data: { code },
