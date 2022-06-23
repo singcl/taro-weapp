@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0-alpha.2](https://github.com/singcl/taro/compare/v0.1.0-alpha.1...v0.1.0-alpha.2) (2022-06-23)
+
+
+### Features
+
+* **api:** 使用局域网IP地址，方便在手机上也可以访问网络 ([7306b56](https://github.com/singcl/taro/commit/7306b5616054ce6c1d57d97ccee26d9d74481b63))
+* **api:** 登录接口调试 ([317e3d2](https://github.com/singcl/taro/commit/317e3d235ad54e2c302b9f4d777111093c6172e9))
+* **config:** appid更新为测试号appid ([866daea](https://github.com/singcl/taro/commit/866daeae25f1ea11a2ef70ecdcfc0a7519fcc4c8))
+* **http:** construct wx http client ([30e2a9a](https://github.com/singcl/taro/commit/30e2a9a67ec6d3088a4e3b6cb794daaf9d01df7d))
+* **icons:** add new tabbar icons ([873b1c3](https://github.com/singcl/taro/commit/873b1c368f400205ad4f6b32fff02677c3c4b17b))
+* **interface:** declare common interface ([2641a00](https://github.com/singcl/taro/commit/2641a0079b8a354ab9c6a79fe1957b39ab6d0a51))
+* **login:** debug login api ([7dc2d8a](https://github.com/singcl/taro/commit/7dc2d8aa4869decef31a01d72bfb1f37368ccfaf))
+* **pages:** add a new page functional center ([d407e80](https://github.com/singcl/taro/commit/d407e805279222a462ddb689e3003a8ac8b3c349))
+
+
+### Bug Fixes
+
+* **docs:** component is not found 可能的解决方案 ([ef59374](https://github.com/singcl/taro/commit/ef59374b5b818c5715a5d9362c2adedabe91252d))
+* **ts:** fix can not find declaration ([1b78f50](https://github.com/singcl/taro/commit/1b78f504a4170dec419ac914646f0360a7a26006))
+
 ## [0.1.0-alpha.1](https://github.com/singcl/taro/compare/v0.1.0-alpha.0...v0.1.0-alpha.1) (2022-06-04)
 
 
