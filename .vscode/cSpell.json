@@ -28,6 +28,7 @@
   // Words to add to dictionary for a workspace.
   "words": [
     "alipay",
+    "miniprogram",
     "nutui",
     "Pinia",
     "quickapp",
