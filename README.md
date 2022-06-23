@@ -94,3 +94,6 @@ npm run cz
 ```sh
 npm run release
 ```
+
+## Inspired
+inspired by [taro-vue3](https://github.com/wlllyfor/taro-vue3.git)
