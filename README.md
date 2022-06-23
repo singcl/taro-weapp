@@ -95,5 +95,9 @@ npm run cz
 npm run release
 ```
 
+## CHANGELOG
+
+[CHANGELOG](./CHANGELOG.md)
+
 ## Inspired
 inspired by [taro-vue3](https://github.com/wlllyfor/taro-vue3.git)
