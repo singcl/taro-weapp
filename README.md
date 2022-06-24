@@ -97,7 +97,8 @@ npm run release
 
 ## CHANGELOG
 
-[CHANGELOG](./CHANGELOG.md)
+[CHANGELOG](./CHANGELOG.md) is here.[commitizen](https://github.com/commitizen/cz-cli),[husky](https://github.com/typicode/husky),[conventional-changelog](https://github.com/conventional-changelog/conventional-changelog),[standard-version](https://github.com/conventional-changelog/standard-version) is very usefull for this project quality.
 
 ## Inspired
+
 inspired by [taro-vue3](https://github.com/wlllyfor/taro-vue3.git)
