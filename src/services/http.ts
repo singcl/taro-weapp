@@ -3,7 +3,7 @@ import Taro from '@tarojs/taro';
 import publicConfig from '@/config/index';
 import { errorHandler } from '@/common';
 // import axios from 'axios-miniprogram';
-import axios, { AxiosInstance } from 'axios';
+import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 
 const CancelToken = axios.CancelToken;
 
@@ -15,9 +15,9 @@ class HttpRequest {
 
   // 获取axios配置
   getInsideConfig() {
-    const config = {
+    const config: AxiosRequestConfig = {
       baseURL: this.baseUrl,
-      header: {
+      headers: {
         'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
       },
       timeout: 10000,
@@ -35,6 +35,7 @@ class HttpRequest {
 
   // 设定拦截器
   interceptors(instance: AxiosInstance) {
+    // 简单的请求拦截器
     instance.interceptors.request.use(
       (config) => {
         console.log('kiko :>> ', config);
@@ -59,6 +60,55 @@ class HttpRequest {
         return Promise.reject(err);
       }
     );
+    // 简单的响应请求的拦截器
+    instance.interceptors.response.use(
+      (res) => {
+        const key = `${res.config.url}&${res.config.method}`;
+        this.removePending(key);
+        if (res.status === 200) {
+          return Promise.resolve(res.data);
+        } else {
+          return Promise.reject(res);
+        }
+      },
+      (err) => {
+        errorHandler(err);
+        return Promise.reject(err);
+      }
+    );
+  }
+
+  // 创建实例
+  request(options: AxiosRequestConfig) {
+    const instance = axios.create();
+    const newOptions = Object.assign(this.getInsideConfig(), options);
+    this.interceptors(instance);
+    return instance(newOptions);
+  }
+
+  get(
+    url: string,
+    config?: AxiosRequestConfig
+  ): Promise<AxiosResponse> | Promise<HttpResponse> {
+    const options = Object.assign(
+      {
+        method: 'get',
+        url: url,
+      },
+      config
+    );
+    return this.request(options);
+  }
+
+  post(
+    url: string,
+    data?: unknown
+  ): Promise<AxiosResponse> | Promise<HttpResponse> {
+    return this.request({
+      method: 'post',
+      url: url,
+      data: data,
+    });
   }
 }
 
