@@ -55,7 +55,6 @@
     "@tarojs/runtime": "3.4.9",
     "@tarojs/taro": "3.4.9",
     "axios": "^0.27.2",
-    "axios-miniprogram": "^2.0.0-rc-2",
     "pinia": "^2.0.6",
     "taro-plugin-pinia": "^1.0.0",
     "vue": "^3.2.24"
