@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { createApp } from 'vue';
 import Taro from '@tarojs/taro';
-
+import '@/services/http';
 import { useApp, useAuth, store } from '@/stores';
 
 import './app.styl';
