@@ -1,3 +1,3 @@
-import login from './login';
+import { login, TaroLogin } from './login';
 
-export { login };
+export { login, TaroLogin };
