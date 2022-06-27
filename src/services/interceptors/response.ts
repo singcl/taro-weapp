@@ -7,8 +7,13 @@ export default async function headersInterceptor(chain: Chain) {
   const requestParams = chain.requestParams;
   const response = await (chain.proceed(requestParams) as RequestTask<any>);
   const { statusCode } = response;
-  if (statusCode === Code.HTTP_LOGIN_EXPIRE) {
-    Taro.showToast({ title: ZhCnText[Code.HTTP_LOGIN_EXPIRE], icon: 'error' });
+  if (statusCode !== Code.HTTP_SUCCESS) {
+    Taro.showToast({
+      title: ZhCnText[statusCode],
+      icon: 'error',
+    });
+    return Promise.reject(ZhCnText[statusCode]);
   }
+
   return response;
 }
