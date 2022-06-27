@@ -2,4 +2,4 @@
 # *.js linguist-language=go
 
 # 不统计改路径下的语言
-config/**/*.js -linguist-detectable
+config/*.js -linguist-detectable
