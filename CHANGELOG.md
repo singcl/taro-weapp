@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0-alpha.3](https://github.com/singcl/taro/compare/v0.1.0-alpha.2...v0.1.0-alpha.3) (2022-06-27)
+
+
+### Features
+
+* **api:** organize api ([cf1e83d](https://github.com/singcl/taro/commit/cf1e83d3a663f5e5b3753709ee146acde4ced7cd))
+* **http:**  response interceptor http code ([4d82901](https://github.com/singcl/taro/commit/4d829019af08e30ba3b2c0bb63fafd1553157e4b))
+* **http:** axios http service client ([bf391cb](https://github.com/singcl/taro/commit/bf391cbdfe258f9e6074c263c6e75d8ded58901a))
+* **http:** header interceptor ([855bd9f](https://github.com/singcl/taro/commit/855bd9f3e5302a71ab24b5f4430ab303622d3cb1))
+* **http:** header token ([8cec2b1](https://github.com/singcl/taro/commit/8cec2b1156d9e09fb3219f224e84a970d4b6801a))
+* **http:** more http code definition ([6f12afd](https://github.com/singcl/taro/commit/6f12afdee0b65f295b9314186970b7470dd2b5e5))
+* **http:** service http ([220a9b3](https://github.com/singcl/taro/commit/220a9b342c538b944f3dbf4bf3b29bb511824768))
+* **http:** taro interceptors ([ef811ff](https://github.com/singcl/taro/commit/ef811ff1025e50754e135a1e29c5042f63e5e120))
+* **http:** Taro 请求拦截器 ([51081e2](https://github.com/singcl/taro/commit/51081e2351f5c0c51274a6e405e655d3a6bd47e4))
+* **login:** login wx chain method ([2a31bfb](https://github.com/singcl/taro/commit/2a31bfb1ce1429d2341c962225a5aa5715d9fef2))
+* **page:** about user ([3708166](https://github.com/singcl/taro/commit/3708166ffe1cea2e8b1600e52fdfd051e7e6f478))
+* **prettier:** update prettier config ([4c835f1](https://github.com/singcl/taro/commit/4c835f1356864b33794acb414c29b64c41f4b3c1))
+
+
+### Bug Fixes
+
+* **api:** remove hideloading ([dec9a34](https://github.com/singcl/taro/commit/dec9a34bbd43fc5a9a3d2ee49be33497adad9f1c))
+
 ## [0.1.0-alpha.2](https://github.com/singcl/taro/compare/v0.1.0-alpha.1...v0.1.0-alpha.2) (2022-06-23)
 
 
