@@ -9,8 +9,4 @@ export default function headersInterceptor(chain: Chain) {
   if (token) header['Token'] = token;
 
   return chain.proceed(Object.assign(requestParams, { header }));
-  //   .then((res) => {
-  //   console.log(`http <-- ${url} result:`, res);
-  //   return res;
-  // });
 }
