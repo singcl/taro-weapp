@@ -36,7 +36,5 @@ export async function TaroLogin() {
       duration: 2000,
     });
     return true;
-  } finally {
-    Taro.hideLoading();
   }
 }
