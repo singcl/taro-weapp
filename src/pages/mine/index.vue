@@ -14,8 +14,8 @@
       获取手机号
     </button>
     <!-- https://developers.weixin.qq.com/community/develop/doc/000e881c7046a8fa1f4d464105b001 -->
-    <open-data type="userAvatarUrl"></open-data>
-    <open-data type="userNickName"></open-data>
+    <!-- <open-data type="userAvatarUrl"></open-data> -->
+    <!-- <open-data type="userNickName"></open-data> -->
   </view>
 </template>
 
