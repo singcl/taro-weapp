@@ -7,7 +7,7 @@ import '@nutui/nutui-taro/dist/styles/themes/default.scss';
 
 import '@/services/http';
 import { /* useApp, useAuth, */ store } from '@/stores';
-import App from './App';
+import App from './App.vue';
 
 import './app.styl';
 
