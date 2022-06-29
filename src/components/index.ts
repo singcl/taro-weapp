@@ -4,7 +4,7 @@ import XmTips from './XmTips';
 
 const components = [XmTips];
 
-export default class XmilesUI {
+export default class XmUI {
   static install(Vue: App<Element> /* options */) {
     // 按需加载nutui
     Vue.use(NutUI);
