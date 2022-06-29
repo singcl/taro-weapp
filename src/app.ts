@@ -6,8 +6,6 @@ import '@/services/http';
 import { /* useApp, useAuth, */ store } from '@/stores';
 import App from './App.vue';
 
-import './app.styl';
-
 const app = createApp(App);
 
 app.use(components);

@@ -1,6 +1,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import API from '@/api';
+import './app.styl';
 
 export default defineComponent({
   onShow(options) {
