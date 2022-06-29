@@ -21,13 +21,20 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: ['taro-plugin-pinia'],
+  // @tarojs/plugin-html 小程序支持使用html标签啦！！
+  // https://taro-docs.jd.com/taro/docs/use-h5
+  plugins: ['taro-plugin-pinia', '@tarojs/plugin-html'],
   defineConstants: {},
   copy: {
     patterns: [],
     options: {},
   },
   framework: 'vue3',
+  // 往所有 scss 文件头部插入 scss 代码
+  // https://taro-docs.jd.com/taro/docs/config-detail#%E5%85%A8%E5%B1%80%E6%B3%A8%E5%85%A5-scss-%E7%9A%84%E4%BE%8B%E5%AD%90
+  sass: {
+    data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`,
+  },
   mini: {
     webpackChain(chain) {
       chain.merge({
@@ -49,7 +56,10 @@ const config = {
     postcss: {
       pxtransform: {
         enable: true,
-        config: {},
+        config: {
+          // 包含 `nut-` 的类名选择器中的 px 单位不会被解析
+          selectorBlackList: ['nut-'],
+        },
       },
       url: {
         enable: true,
