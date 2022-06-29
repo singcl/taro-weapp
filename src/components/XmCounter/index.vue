@@ -12,6 +12,7 @@
     >
       DECREMENT
     </button>
+    <nut-button>测试</nut-button>
   </view>
 </template>
 
