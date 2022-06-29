@@ -1,8 +1,9 @@
 import type { App } from 'vue';
 import NutUI from './nutui';
 import XmTips from './XmTips';
+import XmForm from './XmForm';
 
-const components = [XmTips];
+const components = [XmTips, XmForm];
 
 export default class XmUI {
   static install(Vue: App<Element> /* options */) {
@@ -15,4 +16,4 @@ export default class XmUI {
   }
 }
 
-export { XmTips };
+export { XmTips, XmForm };
