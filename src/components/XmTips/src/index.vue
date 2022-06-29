@@ -17,10 +17,11 @@
 
 <script lang="ts">
 import { useCounterStore } from '@/stores';
+import { defineComponent } from 'vue';
 // import { reactive, computed } from 'vue';
 import styles from './index.module.styl';
 
-export default {
+export default defineComponent({
   name: 'XmTips',
   setup() {
     const counter = useCounterStore();
@@ -51,5 +52,5 @@ export default {
       styles,
     };
   },
-};
+});
 </script>
