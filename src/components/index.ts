@@ -1,7 +1,7 @@
-import type { App, Component } from 'vue';
+import type { App } from 'vue';
 import XmTips from './XmTips';
 
-const components: Component[] = [XmTips];
+const components = [XmTips];
 
 export default class XmilesUI {
   static install(Vue: App<Element> /* options */) {

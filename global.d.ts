@@ -8,7 +8,12 @@ declare module '*.less';
 declare module '*.scss';
 declare module '*.sass';
 declare module '*.styl';
-declare module '*.vue';
+declare module '*.vue' {
+  import type { DefineComponent } from 'vue';
+
+  const component: DefineComponent;
+  export default component;
+}
 
 // @ts-ignore
 declare const process: {
