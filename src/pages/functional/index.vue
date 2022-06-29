@@ -1,5 +1,7 @@
 <template>
-  <view>设置</view>
+  <view>
+    <xm-form></xm-form>
+  </view>
 </template>
 
 <script lang="ts">
