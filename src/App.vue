@@ -1,6 +1,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import API from '@/api';
+import { useAuth } from '@/stores';
 import './app.styl';
 
 export default defineComponent({
@@ -13,6 +14,14 @@ export default defineComponent({
   onLaunch() {
     // 登录
     API.auth.TaroLogin();
+    // TODO 获取用户信息
+    const auth = useAuth();
+    auth.$patch({
+      userInfo: {
+        nickName: '',
+        avatarUrl: '',
+      },
+    });
   },
 });
 </script>
