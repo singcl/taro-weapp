@@ -1,19 +1,16 @@
 import type { App } from 'vue';
 import NutUI from './nutui';
-import XmTips from './XmTips';
-import XmForm from './XmForm';
 
-const components = [XmTips, XmForm];
+import XmComponents from './global_components';
+import GComponents from './components';
 
 export default class XmUI {
   static install(Vue: App<Element> /* options */) {
     // 按需加载nutui
     Vue.use(NutUI);
     // 加载项目公共组件
-    components.forEach((component) => {
-      Vue.component(component.name || 'anonymous', component);
-    });
+    Vue.use(new XmComponents(GComponents));
   }
 }
 
-export { XmTips, XmForm };
+export * from './components';
