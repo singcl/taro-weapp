@@ -9,9 +9,19 @@ import {
   FormItem,
   CellGroup,
   TextArea,
+  Avatar,
 } from '@nutui/nutui-taro';
 
-const components = [Button, Cell, Icon, Form, FormItem, CellGroup, TextArea];
+const components = [
+  Button,
+  Cell,
+  Icon,
+  Form,
+  FormItem,
+  CellGroup,
+  TextArea,
+  Avatar,
+];
 
 export default class NutUI {
   static install(Vue: App<Element> /* options */) {
