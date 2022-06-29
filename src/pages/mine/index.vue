@@ -7,12 +7,14 @@
       open-type="chooseAvatar"
       v-on:chooseavatar="onChooseAvatar"
     >
-      <image :class="styles['avatar']" :src="wxAvatarUrl"></image>
+      <nut-avatar :url="wxAvatarUrl" shape="round" size="large"></nut-avatar>
+      <!-- <image :class="styles['avatar']" :src="wxAvatarUrl"></image> -->
     </button>
-    <label :class="styles['form-item']">
+    <input type="nickname" placeholder="请输入昵称" />
+    <!-- <label :class="styles['form-item']">
       <text :class="styles['form-item__title']">昵称</text>
       <input type="nickname" placeholder="请输入昵称" />
-    </label>
+    </label> -->
     <button
       :class="styles['button-sp-area']"
       type="primary"
