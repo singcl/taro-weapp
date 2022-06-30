@@ -6,7 +6,7 @@ export default function headersInterceptor(chain: Chain) {
   header['Content-Type'] = 'application/x-www-form-urlencoded; charset=utf-8';
 
   const token = Taro.getStorageSync('token');
-  if (token) header['Token'] = token;
+  if (token) header['WxToken'] = token;
 
   return chain.proceed(Object.assign(requestParams, { header }));
 }
