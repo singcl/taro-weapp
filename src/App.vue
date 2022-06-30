@@ -11,9 +11,11 @@ export default defineComponent({
   },
   // 入口组件不需要实现 render 方法，即使实现了也会被 taro 所覆盖
   //
-  onLaunch() {
+  async onLaunch() {
     // 登录
-    API.auth.TaroLogin();
+    await API.auth.TaroLogin();
+    const info = await API.auth.detail();
+    console.log('----info:', info);
     // TODO 获取用户信息
     const auth = useAuth();
     auth.$patch({
