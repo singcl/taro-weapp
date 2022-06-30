@@ -22,7 +22,7 @@ export async function TaroLogin() {
   try {
     await Taro.checkSession();
     const token = Taro.getStorageSync('token');
-    return token ? true : await Promise.reject('token:expired');
+    return token ? token : await Promise.reject(null);
   } catch (err) {
     const { code } = await Taro.login();
     const {
@@ -35,6 +35,6 @@ export async function TaroLogin() {
       icon: 'success',
       duration: 2000,
     });
-    return true;
+    return token;
   }
 }
