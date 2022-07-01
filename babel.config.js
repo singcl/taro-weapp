@@ -28,8 +28,7 @@ module.exports = {
       {
         libraryName: '@nutui/nutui-taro',
         libraryDirectory: 'dist/packages/_es',
-        style: (name /* ,file */) =>
-          name.toLowerCase().replace('_es/', '') + '/index.scss',
+        style: (name /* ,file */) => name.toLowerCase().replace('_es/', '') + '/index.scss',
         camel2DashComponentName: false,
       },
       'nutui3-taro',
