@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia';
+import Taro from '@tarojs/taro';
 
 interface UserInfoProps {
   nickname: string;
@@ -16,6 +17,7 @@ interface AuthGetters<S = AuthState>
   nickname: (s: S) => string;
   avatarUrl: (s: S) => string;
   mobile: (s: S) => string;
+  token: () => string;
 }
 
 export const useAuth = defineStore<string, AuthState, AuthGetters>({
@@ -38,5 +40,6 @@ export const useAuth = defineStore<string, AuthState, AuthGetters>({
     nickname: (state) => state.userInfo.nickname,
     avatarUrl: (state) => state.userInfo.avatarUrl,
     mobile: (state) => state.userInfo.mobile,
+    token: () => Taro.getStorageSync('token'),
   },
 });
