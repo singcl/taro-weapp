@@ -58,6 +58,30 @@ module.exports = {
 };
 ```
 
+## Stylelint
+
+项目配置完整的 Stylelint 检查。
+
+```js
+// @see https://www.npmjs.com/package/stylelint-stylus
+// @see https://stylelint.io/user-guide/configure/
+module.exports = {
+  extends: [
+    'stylelint-config-standard',
+    'stylelint-config-prettier',
+    'stylelint-config-standard-scss',
+    'stylelint-config-prettier-scss',
+    // @see https://www.npmjs.com/package/stylelint-stylus
+    'stylelint-stylus/standard',
+  ],
+  rules: {
+    // override/add rules settings here, such as:
+    // "stylus/declaration-colon": "never"
+  },
+};
+
+```
+
 ## Commitizen
 
 代码提交前 commit message 规范检查与交互式设置
@@ -68,6 +92,7 @@ module.exports = {
 
 ```sh
 #!/usr/bin/env sh
+# @see #!/bin/bash 和 #!/usr/bin/env bash 的区别
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "😊😊 eslint..."
@@ -77,6 +102,10 @@ echo "✨✨Eslint Success!"
 echo "😊😊 Vue 3 command line Type-Checking tool base on IDE plugin Volar."
 npm run tsc
 echo "✨✨Type-Checking Success!"
+
+echo "😊😊 Stylelint..."
+npm run stylelint
+echo "✨✨Stylelint-Checking Success!"
 
 ```
 
