@@ -3,4 +3,14 @@
   "languageStylus.useSeparator": false, // default value
   // Toggle matches for Stylus Builtin Functions on autocomplete
   "languageStylus.useBuiltinFunctions": true, // default value
+  // You have to configure the stylelint.validate option of the extension to check .stylus files,
+  // because the extension does not check the *.stylus file by default.
+  // @see https://www.npmjs.com/package/stylelint-stylus
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss",
+    "stylus"
+  ]
 }
