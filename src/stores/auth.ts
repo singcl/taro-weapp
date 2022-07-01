@@ -12,8 +12,7 @@ interface AuthState {
   userInfo: UserInfoProps;
 }
 
-interface AuthGetters<S = AuthState>
-  extends Record<string, ((s: S) => any) | (() => any)> {
+interface AuthGetters<S = AuthState> extends Record<string, ((s: S) => any) | (() => any)> {
   nickname: (s: S) => string;
   avatarUrl: (s: S) => string;
   mobile: (s: S) => string;

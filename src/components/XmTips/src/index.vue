@@ -1,17 +1,8 @@
 <template>
   <view>
     <text :class="styles['title']">{{ counter.count }}</text>
-    <button type="warn" :class="styles['button']" @tap="onAdd">
-      INCREMENT
-    </button>
-    <button
-      type="primary"
-      :plain="true"
-      :class="styles['button']"
-      @tap="onDecrement"
-    >
-      DECREMENT
-    </button>
+    <button type="warn" :class="styles['button']" @tap="onAdd">INCREMENT</button>
+    <button type="primary" :plain="true" :class="styles['button']" @tap="onDecrement">DECREMENT</button>
   </view>
 </template>
 

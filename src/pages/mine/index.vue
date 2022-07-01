@@ -2,11 +2,7 @@
   <view :class="styles['wrapper']">
     <!-- https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/userProfile.html -->
     <!-- https://developers.weixin.qq.com/miniprogram/dev/api/open-api/user-info/wx.getUserProfile.html -->
-    <button
-      :class="styles['avatar-wrapper']"
-      open-type="chooseAvatar"
-      v-on:chooseavatar="onChooseAvatar"
-    >
+    <button :class="styles['avatar-wrapper']" open-type="chooseAvatar" v-on:chooseavatar="onChooseAvatar">
       <nut-avatar :url="wxAvatarUrl" shape="round" size="large"></nut-avatar>
       <!-- <image :class="styles['avatar']" :src="wxAvatarUrl"></image> -->
     </button>

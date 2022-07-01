@@ -1,13 +1,7 @@
 <template>
   <view class="index">
     <XmTips />
-    <button
-      type="primary"
-      :class="styles['button-sp-area']"
-      @tap="handleShowUserInfo"
-    >
-      获取用户信息
-    </button>
+    <button type="primary" :class="styles['button-sp-area']" @tap="handleShowUserInfo">获取用户信息</button>
 
     <view v-if="showUserInfo">
       <div>
@@ -20,11 +14,7 @@
       </div>
       <div>
         <text>头像</text>
-        <nut-avatar
-          :url="authInfoStore.avatarUrl"
-          shape="round"
-          size="large"
-        ></nut-avatar>
+        <nut-avatar :url="authInfoStore.avatarUrl" shape="round" size="large"></nut-avatar>
       </div>
       <div>
         <text>电话：</text>
