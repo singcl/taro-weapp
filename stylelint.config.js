@@ -9,6 +9,16 @@ module.exports = {
     // @see https://www.npmjs.com/package/stylelint-stylus
     'stylelint-stylus/standard',
   ],
+  // plugins: [
+  //   // add this plugin here:
+  //   "stylelint-stylus",
+  // ],
+  // overrides: [
+  //   {
+  //     files: ["*.stylus", "*.styl", "**/*.stylus", "**/*.styl"],
+  //     customSyntax: "postcss-styl",
+  //   },
+  // ],
   rules: {
     // override/add rules settings here, such as:
     // "stylus/declaration-colon": "never"
