@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0-alpha.4](https://github.com/singcl/taro/compare/v0.1.0-alpha.3...v0.1.0-alpha.4) (2022-07-01)
+
+
+### Features
+
+* **api:** the login api return token ([94c2222](https://github.com/singcl/taro/commit/94c2222612c59736b78267c8317d4af43d0b973c))
+* **api:** weixin user info api complete ([67ff80e](https://github.com/singcl/taro/commit/67ff80e09690d05f8e6d05d65054a01ffd644541))
+* **app:** adjust the app constructor ([a5e5458](https://github.com/singcl/taro/commit/a5e54581775c436b2c2ab1d5bcb4c36e25364525))
+* **components:** components ([f1d87f3](https://github.com/singcl/taro/commit/f1d87f3eeba87498e15665b97e0b4fea9cb5a775))
+* **components:** defineComponent ([f783e35](https://github.com/singcl/taro/commit/f783e35628b3ec186e1c9a4d75a1a94f4b2bdafe))
+* **components:** global components ([0b4d1d3](https://github.com/singcl/taro/commit/0b4d1d3e9ea2fd4d0048e089ca1d7d3114902b9a))
+* **components:** global components register ([8c008df](https://github.com/singcl/taro/commit/8c008dfb885c9fd4ac4efa8c514392612bac797a))
+* **components:** interface type ([49b6ca9](https://github.com/singcl/taro/commit/49b6ca9af886ff9041d05d8260326fbf64b79295))
+* **components:** load required components ([eb5182e](https://github.com/singcl/taro/commit/eb5182eaaf99c9c27696e3dc59d5fb54bb718f68))
+* **components:** upgrade global componnets ([7f1d4bf](https://github.com/singcl/taro/commit/7f1d4bf84be7820d3c798ef5cad4d65f5f8423f7))
+* **http:** replace token name in header ([f8fd30c](https://github.com/singcl/taro/commit/f8fd30cb87436b4b25ce1bb548fc2c12a9b308ac))
+* **page:** mine page ([4cd525b](https://github.com/singcl/taro/commit/4cd525b5ffdd741c12604c3a0b8097bca3d97c4f))
+* **pages:** mine center ([21f6488](https://github.com/singcl/taro/commit/21f6488075416cd0f84d3a0f507523ca8b95226c))
+* **pages:** mine center user info ([2a43026](https://github.com/singcl/taro/commit/2a43026f19f5039799cb5529841b7106216ca8f0))
+* **pages:** mine pages with avatar ([3b30850](https://github.com/singcl/taro/commit/3b30850d8a9093cb62a4dcf1ff796e74220036ae))
+* **pages:** open data wx user profile ([96b9b63](https://github.com/singcl/taro/commit/96b9b6332dcb224a65cea088e580a8cf2b9e5ae9))
+* **store:** pinia store the auth ([90c0489](https://github.com/singcl/taro/commit/90c04895740aeb5b34b6c7ea21b4a0ec40c2394f))
+
+
+### Bug Fixes
+
+* **app:** fix App import error ([efd4efc](https://github.com/singcl/taro/commit/efd4efc34ec2e1a2b0d8e3e526943d54b8db7ba9))
+
 ## [0.1.0-alpha.3](https://github.com/singcl/taro/compare/v0.1.0-alpha.2...v0.1.0-alpha.3) (2022-06-27)
 
 
