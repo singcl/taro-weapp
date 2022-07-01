@@ -10,3 +10,7 @@ echo "✨✨Eslint Success!"
 echo "😊😊 Vue 3 command line Type-Checking tool base on IDE plugin Volar."
 npm run tsc
 echo "✨✨Type-Checking Success!"
+
+echo "😊😊 Stylelint..."
+npm run stylelint
+echo "✨✨Stylelint-Checking Success!"
