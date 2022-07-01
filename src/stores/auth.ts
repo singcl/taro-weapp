@@ -1,26 +1,27 @@
 import { defineStore } from 'pinia';
 
 interface UserInfoProps {
-  nickName: string;
+  nickname: string;
   avatarUrl: string;
+  mobile: string;
+  username?: string;
 }
 
-export const useAuth = defineStore({
+interface AuthState {
+  userInfo: UserInfoProps;
+}
+
+export const useAuth = defineStore<string, AuthState>({
   id: 'authInfo',
   state: () => ({
     userInfo: {
-      nickName: '',
+      nickname: '',
       avatarUrl: '',
+      mobile: '',
+      username: undefined,
     },
-    isLogin: false,
   }),
   actions: {
-    login() {
-      this.isLogin = true;
-    },
-    logout() {
-      this.isLogin = false;
-    },
     setUserInfo(userInfo: UserInfoProps) {
       this.userInfo = userInfo;
     },

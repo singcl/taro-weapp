@@ -14,14 +14,15 @@ export default defineComponent({
   async onLaunch() {
     // 登录
     await API.auth.TaroLogin();
-    const info = await API.auth.detail();
-    console.log('----info:', info);
+    const { data } = await API.auth.detail();
     // TODO 获取用户信息
     const auth = useAuth();
     auth.$patch({
       userInfo: {
-        nickName: '',
-        avatarUrl: '',
+        nickname: data.nickname,
+        avatarUrl: data.avatar_url,
+        mobile: data.mobile,
+        username: data.username,
       },
     });
   },
