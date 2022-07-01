@@ -36,16 +36,20 @@ export default {
 </script>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 import styles from './index.module.styl';
+import { useAuth } from '@/stores';
+import { storeToRefs } from 'pinia';
 
-const defaultAvatarUrl =
-  'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0';
+//
+const auth = useAuth();
+
 // 获取微信头像
-const wxAvatarUrl = ref(defaultAvatarUrl);
+// @see https://pinia.web3doc.top/core-concepts/#%E4%BD%BF%E7%94%A8-store
+// 如何使用解构的store
+const wxAvatarUrl = storeToRefs(auth).avatarUrl;
 function onChooseAvatar(e: any) {
   const { avatarUrl } = e.detail;
-  wxAvatarUrl.value = avatarUrl;
+  auth.$patch({ userInfo: { avatarUrl: avatarUrl } });
 }
 
 // 获取手机号
