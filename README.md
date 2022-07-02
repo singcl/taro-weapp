@@ -136,10 +136,12 @@ npm run release
 ## Test
 Test Resource
 [Vue3 Test Guide](https://staging-cn.vuejs.org/guide/scaling-up/testing.html#component-testing)
-[vitest](https://cn.vitest.dev/guide/ide.html#vs-code)
+
+[Vitest](https://cn.vitest.dev/guide/ide.html#vs-code) Vitest 需要 Vite >=v2.7.10 和 Node >=v14
+
 [vite](https://vitejs.cn/guide/#command-line-interface)
 
-[coverage](./coverage/index.html)
+[coverage](./coverage)
 
 ## Inspired
 
