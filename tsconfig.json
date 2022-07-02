@@ -27,7 +27,8 @@
       "@/assets/*": ["./src/assets/*"],
       "@/package": ["./package.json"],
       "@/project": ["./project.config.json"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
   "exclude": ["node_modules", "dist", "coverage"],
   "compileOnSave": false
