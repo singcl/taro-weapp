@@ -19,16 +19,16 @@ export default {
         text: '首页',
       },
       {
-        pagePath: 'pages/mine/index',
-        iconPath: 'assets/icons/mine_default.png',
-        selectedIconPath: 'assets/icons/mine_selected.png',
-        text: '个人中心',
-      },
-      {
         pagePath: 'pages/functional/index',
         iconPath: 'assets/icons/settings_default.png',
         selectedIconPath: 'assets/icons/settings_selected.png',
-        text: '设置',
+        text: '功能',
+      },
+      {
+        pagePath: 'pages/mine/index',
+        iconPath: 'assets/icons/mine_default.png',
+        selectedIconPath: 'assets/icons/mine_selected.png',
+        text: '我的',
       },
     ],
   },

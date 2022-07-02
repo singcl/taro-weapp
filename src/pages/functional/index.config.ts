@@ -1,3 +1,3 @@
 export default {
-  navigationBarTitleText: '设置',
+  navigationBarTitleText: '功能',
 };
