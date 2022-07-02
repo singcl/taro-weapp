@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import { useCounterStore } from '@/stores';
+import { useCounterStore } from '@/stores/counter';
 import { defineComponent } from 'vue';
 // import { reactive, computed } from 'vue';
 import styles from './index.module.styl';
