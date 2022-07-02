@@ -27,6 +27,7 @@
     "eslint:fix": "eslint --ext .vue --ext .js --ext .jsx --ext .ts --ext .tsx --fix src/",
     "eslint": "eslint --ext .vue --ext .js --ext .jsx --ext .ts --ext .tsx src/",
     "stylelint": "stylelint **/*.{css,less,scss,styl}",
+    "lint": "npm run eslint && npm run stylelint",
     "prepare": "husky install",
     "tsc": "vue-tsc --noEmit --skipLibCheck",
     "cz": "cz",
