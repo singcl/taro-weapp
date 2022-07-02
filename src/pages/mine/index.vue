@@ -12,10 +12,20 @@
           <text :class="styles['header-info__nickname']">
             {{ nickname }}
           </text>
-          <nut-button size="small" :class="styles['header-info__settings']">账户设置</nut-button>
+          <nut-button size="mini" :class="styles['header-info__settings']">账户设置</nut-button>
         </view>
       </view>
-      <view> </view>
+      <view :class="styles['hearder-func-bars']">
+        <view
+          v-for="bar in funtionalBars.bars"
+          :key="bar.text"
+          :style="{ color: bar.color }"
+          :class="styles['hearder-func-bars__item']"
+        >
+          <nut-icon :name="bar.icon" :size="bar.size" :color="bar.color"></nut-icon>
+          <text :class="styles['hearder-func-bars__text']">{{ bar.text }}</text>
+        </view>
+      </view>
     </view>
     <!-- <input type="nickname" placeholder="请输入昵称" /> -->
     <!-- <label :class="styles['form-item']">
@@ -43,9 +53,10 @@ export default {
 </script>
 
 <script setup lang="ts">
-import styles from './index.module.styl';
+import { reactive } from 'vue';
 import { useAuth } from '@/stores';
 import { storeToRefs } from 'pinia';
+import styles from './index.module.styl';
 
 //
 const auth = useAuth();
@@ -59,6 +70,15 @@ function onChooseAvatar(e: any) {
   const { avatarUrl } = e.detail;
   auth.$patch({ userInfo: { avatarUrl: avatarUrl } });
 }
+//
+const funtionalBars = reactive({
+  bars: [
+    { icon: 'star', text: '收藏', color: '#2c2817', size: '18' },
+    { icon: 'eye', text: '关注公众号', color: '#2c2817', size: '18' },
+    { icon: 'service', text: '客服', color: '#2c2817', size: '18' },
+    { icon: 'dshop', text: '红包卡券', color: '#2c2817', size: '18' },
+  ],
+});
 
 // // 获取手机号
 // function getPhoneNumber(e: any) {
