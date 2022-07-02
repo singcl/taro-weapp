@@ -1,5 +1,4 @@
 ![ci](https://img.shields.io/github/workflow/status/singcl/taro-weapp/ci?label=ci&logo=github)
-![nycrc config on GitHub](https://img.shields.io/nycrc/singcl/taro-weapp)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 
@@ -148,3 +147,6 @@ Test Resource and [coverage](https://github.com/bcoe/c8/blob/main/.github/workfl
 ## Inspired
 
 inspired by [taro-vue3](https://github.com/wlllyfor/taro-vue3.git)
+
+## nyc
+[nycrc config on GitHub](https://img.shields.io/nycrc/singcl/taro-weapp?label=cycrc)
