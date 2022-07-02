@@ -17,5 +17,12 @@ export default defineConfig({
     // 使用 happy-dom 模拟 DOM
     // 这需要你安装 happy-dom 作为对等依赖（peer dependency）
     environment: 'happy-dom',
+    coverage: {
+      reporter: ['text', 'json', 'html'],
+      // extension: ['.js', '.cjs', '.mjs', '.ts', '.tsx', '.jsx', '.vue'],
+      // @see https://github.com/bcoe/c8#checking-for-full-source-coverage-using---all
+      all: true,
+      src: ['./src'],
+    },
   },
 });
