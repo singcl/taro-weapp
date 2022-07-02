@@ -18,7 +18,7 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "resolveJsonModule": true,
-    "typeRoots": ["node_modules/@types", "global.d.ts"],
+    "typeRoots": ["node_modules/@types", "global.d.ts", "typings"],
     "paths": {
       "@/*": ["src/*"],
       "@/components/*": ["./src/components/*"],
@@ -29,6 +29,6 @@
       "@/project": ["./project.config.json"]
     }
   },
-  "exclude": ["node_modules", "dist"],
+  "exclude": ["node_modules", "dist", "coverage"],
   "compileOnSave": false
 }

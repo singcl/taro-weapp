@@ -51,16 +51,15 @@
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
+    "@nutui/nutui-taro": "^3.1.8",
     "@tarojs/components": "3.4.9",
     "@tarojs/plugin-framework-vue3": "3.4.9",
+    "@tarojs/plugin-html": "3.4.11",
     "@tarojs/runtime": "3.4.9",
     "@tarojs/taro": "3.4.9",
-    "axios": "^0.27.2",
     "pinia": "^2.0.6",
     "taro-plugin-pinia": "^1.0.0",
-    "vue": "^3.2.24",
-    "@tarojs/plugin-html": "3.4.11",
-    "@nutui/nutui-taro": "^3.1.8"
+    "vue": "^3.2.24"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
