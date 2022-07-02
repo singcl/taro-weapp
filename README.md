@@ -133,6 +133,14 @@ npm run release
 
 [使用nutui组件库](https://taro-docs.jd.com/taro/docs/nutui)
 
+## Test
+Test Resource
+[Vue3 Test Guide](https://staging-cn.vuejs.org/guide/scaling-up/testing.html#component-testing)
+[vitest](https://cn.vitest.dev/guide/ide.html#vs-code)
+[vite](https://vitejs.cn/guide/#command-line-interface)
+
+[coverage](./coverage/index.html)
+
 ## Inspired
 
 inspired by [taro-vue3](https://github.com/wlllyfor/taro-vue3.git)
