@@ -27,6 +27,20 @@
         </view>
       </view>
     </view>
+
+    <view :class="styles['header-shops-list']">
+      <view :class="styles['hearder-func-bars']">
+        <view
+          v-for="shop in funtionalBars.shops"
+          :key="shop.text"
+          :style="{ color: shop.color }"
+          :class="styles['hearder-func-bars__item']"
+        >
+          <nut-icon :name="shop.icon" :size="shop.size" :color="shop.color"></nut-icon>
+          <text :class="styles['hearder-func-bars__text']">{{ shop.text }}</text>
+        </view>
+      </view>
+    </view>
     <!-- <input type="nickname" placeholder="请输入昵称" /> -->
     <!-- <label :class="styles['form-item']">
       <text :class="styles['form-item__title']">昵称</text>
@@ -77,6 +91,13 @@ const funtionalBars = reactive({
     { icon: 'eye', text: '关注公众号', color: '#2c2817', size: '18' },
     { icon: 'service', text: '客服', color: '#2c2817', size: '18' },
     { icon: 'dshop', text: '红包卡券', color: '#2c2817', size: '18' },
+  ],
+  shops: [
+    { icon: 'star', text: '我的订单', color: '#474747', size: '18' },
+    { icon: 'eye', text: '待付款', color: '#474747', size: '18' },
+    { icon: 'service', text: '待使用', color: '#474747', size: '18' },
+    { icon: 'dshop', text: '待评价', color: '#474747', size: '18' },
+    { icon: 'dshop', text: '退款/售后', color: '#474747', size: '18' },
   ],
 });
 
