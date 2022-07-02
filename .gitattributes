@@ -3,3 +3,4 @@
 
 # 不统计改路径下的语言
 config/*.js -linguist-detectable
+coverage -linguist-detectable
