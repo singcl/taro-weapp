@@ -1,4 +1,4 @@
-export default {
+export default defineAppConfig({
   pages: ['pages/index/index', 'pages/functional/index', 'pages/mine/index'],
   window: {
     backgroundTextStyle: 'light',
@@ -32,4 +32,4 @@ export default {
       },
     ],
   },
-};
+});
