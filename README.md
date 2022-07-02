@@ -134,14 +134,14 @@ npm run release
 [使用nutui组件库](https://taro-docs.jd.com/taro/docs/nutui)
 
 ## Test
-Test Resource
+Test Resource and [coverage](https://github.com/bcoe/c8/blob/main/.github/workflows/release-please.yml)
+
 [Vue3 Test Guide](https://staging-cn.vuejs.org/guide/scaling-up/testing.html#component-testing)
 
 [Vitest](https://cn.vitest.dev/guide/ide.html#vs-code) Vitest 需要 Vite >=v2.7.10 和 Node >=v14
 
 [vite](https://vitejs.cn/guide/#command-line-interface)
 
-[coverage](./coverage)
 
 ## Inspired
 
