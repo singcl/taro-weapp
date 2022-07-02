@@ -30,7 +30,8 @@
     "prepare": "husky install",
     "tsc": "vue-tsc --noEmit --skipLibCheck",
     "cz": "cz",
-    "release": "standard-version --prerelease alpha"
+    "release": "standard-version --prerelease alpha",
+    "test": "vitest"
   },
   "browserslist": [
     "last 3 versions",
@@ -66,9 +67,11 @@
     "@tarojs/cli": "3.4.11",
     "@tarojs/mini-runner": "3.4.9",
     "@tarojs/webpack-runner": "3.4.9",
+    "@testing-library/vue": "^6.4.2",
     "@types/webpack-env": "^1.13.6",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
+    "@vitejs/plugin-vue": "^2.3.3",
     "babel-plugin-import": "^1.13.3",
     "babel-preset-taro": "3.4.9",
     "commitizen": "^4.2.4",
@@ -81,6 +84,7 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-vue": "^8.0.0",
+    "happy-dom": "^6.0.0",
     "husky": "^8.0.0",
     "postcss": "^8.4.14",
     "postcss-html": "^1.4.1",
@@ -96,6 +100,7 @@
     "stylelint-scss": "^4.2.0",
     "stylelint-stylus": "^0.16.1",
     "typescript": "^4.7.2",
+    "vitest": "^0.16.0",
     "vue-loader": "^16.8.3",
     "vue-tsc": "^0.35.0"
   },
