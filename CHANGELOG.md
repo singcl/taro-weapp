@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0-alpha.5](https://github.com/singcl/taro/compare/v0.1.0-alpha.4...v0.1.0-alpha.5) (2022-07-02)
+
+
+### Features
+
+* **compoents:** import path modified ([4dee0f9](https://github.com/singcl/taro/commit/4dee0f924486436fae027ae5c7d88dc844ead0bb))
+* **components:** html5 event in weixin ([c764bb5](https://github.com/singcl/taro/commit/c764bb5ad245b70bf6bb4ba4cf130da491867dcf))
+* **lint:** stylelint check commit ([8b8faaa](https://github.com/singcl/taro/commit/8b8faaa457e028d84b0d76c164fc3c64766ad5fa))
+* **store:** use pinia store more functional ([2214ed9](https://github.com/singcl/taro/commit/2214ed9ab7bdcfe6596671e2604fcefe5fc30721))
+
+
+### Bug Fixes
+
+* **style:** fix stylelint error ([7889a75](https://github.com/singcl/taro/commit/7889a7550695b311706a62b2d1a4cfb126875a94))
+
 ## [0.1.0-alpha.4](https://github.com/singcl/taro/compare/v0.1.0-alpha.3...v0.1.0-alpha.4) (2022-07-01)
 
 
