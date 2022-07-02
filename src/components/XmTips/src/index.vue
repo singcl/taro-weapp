@@ -1,6 +1,8 @@
 <template>
   <view>
     <text :class="styles['title']">{{ counter.count }}</text>
+    <!-- // @tarojs/plugin-html 小程序支持使用html标签和html5事件！！ -->
+    <!-- // https://taro-docs.jd.com/taro/docs/use-h5 -->
     <button type="warn" :class="styles['button']" @click="onAdd">INCREMENT</button>
     <button type="primary" :plain="true" :class="styles['button']" @click="onDecrement">DECREMENT</button>
   </view>
