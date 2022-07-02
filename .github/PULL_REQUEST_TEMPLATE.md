@@ -1,25 +1,15 @@
-<!-- Thank you for contributing! -->
+<!--
+Thank you for your pull request. Please provide a description above and review
+the requirements below.
 
-### Description
+Bug fixes and new features should include tests and possibly benchmarks.
 
-<!-- Please insert your description here and provide especially info about the "what" this PR is solving -->
+Contributors guide: https://github.com/bcoe/c8/blob/master/CONTRIBUTING.md
+-->
 
-### Additional context
-
-<!-- e.g. is there anything you'd like reviewers to focus on? -->
-
----
-
-### What is the purpose of this pull request? <!-- (put an "X" next to an item) -->
-
-- [ ] Bug fix
-- [ ] New Feature
-- [ ] Documentation update
-- [ ] Other
-
-### Before submitting the PR, please make sure you do the following
-
-- [ ] Read the [Contributing Guidelines](https://github.com/singcl/taro-weapp/blob/master/CONTRIBUTING.md).
-- [ ] Check that there isn't already a PR that solves the problem the same way to avoid creating a duplicate.
-- [ ] Provide a description in this PR that addresses **what** the PR is solving, or reference the issue that it solves (e.g. `fixes #123`).
-- [ ] Ideally, include relevant tests that fail without this PR but pass with it.
+##### Checklist
+<!-- Remove items that do not apply. For completed items, change [ ] to [x]. -->
+- [ ] `npm test`, tests passing
+- [ ] `npm run test:snap` (to update the snapshot)
+- [ ] tests and/or benchmarks are included
+- [ ] documentation is changed or added
