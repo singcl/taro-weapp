@@ -3,6 +3,12 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 
+# taro-weapp
+
+`taro-weapp`是一款功能完备的基于 taro3.x，Vue3.x 开发的 wonderful 小程序！
+
+小程序后端服务[gin-taro-api](https://github.com/singcl/gin-taro-api)基于`go 1.18+`编写。
+
 ## Eslint
 
 项目配置完整的 eslint 检查，prettier 格式化规则，并且相互兼容。
@@ -81,7 +87,6 @@ module.exports = {
     // "stylus/declaration-colon": "never"
   },
 };
-
 ```
 
 ## Commitizen
@@ -133,9 +138,10 @@ npm run release
 
 ## NUTUI
 
-[使用nutui组件库](https://taro-docs.jd.com/taro/docs/nutui)
+[使用 nutui 组件库](https://taro-docs.jd.com/taro/docs/nutui)
 
 ## Test
+
 Test Resource and [coverage](https://github.com/bcoe/c8/blob/main/.github/workflows/release-please.yml)
 
 [Vue3 Test Guide](https://staging-cn.vuejs.org/guide/scaling-up/testing.html#component-testing)
@@ -144,8 +150,6 @@ Test Resource and [coverage](https://github.com/bcoe/c8/blob/main/.github/workfl
 
 [vite](https://vitejs.cn/guide/#command-line-interface)
 
-
 ## Inspired
 
 inspired by [taro-vue3](https://github.com/wlllyfor/taro-vue3.git)
-
