@@ -30,25 +30,28 @@
       </view>
     </view>
 
-    <view :class="styles['header-shops-list']">
-      <view :class="styles['hearder-func-bars']">
-        <view
-          v-for="shop in funtionalBars.shops"
-          :key="shop.text"
-          :style="{ color: shop.color }"
-          :class="styles['hearder-func-bars__item']"
-        >
-          <nut-icon
-            font-class-name="iconfont"
-            class-prefix="icon"
-            :name="shop.icon"
-            :size="shop.size"
-            :color="shop.color"
-          ></nut-icon>
-          <text :class="styles['hearder-func-bars__text']">{{ shop.text }}</text>
+    <view :class="styles['main-container']">
+      <view :class="styles['header-shops-list']">
+        <view :class="styles['hearder-func-bars']">
+          <view
+            v-for="shop in funtionalBars.shops"
+            :key="shop.text"
+            :style="{ color: shop.color }"
+            :class="styles['hearder-func-bars__item']"
+          >
+            <nut-icon
+              font-class-name="iconfont"
+              class-prefix="icon"
+              :name="shop.icon"
+              :size="shop.size"
+              :color="shop.color"
+            ></nut-icon>
+            <text :class="styles['hearder-func-bars__text']">{{ shop.text }}</text>
+          </view>
         </view>
       </view>
     </view>
+
     <!-- <input type="nickname" placeholder="请输入昵称" /> -->
     <!-- <label :class="styles['form-item']">
       <text :class="styles['form-item__title']">昵称</text>
