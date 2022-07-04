@@ -1,7 +1,9 @@
+<!-- https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/userProfile.html -->
+<!-- https://developers.weixin.qq.com/miniprogram/dev/api/open-api/user-info/wx.getUserProfile.html -->
 <template>
+  <!-- tab mine center -->
   <view :class="styles['wrapper']">
-    <!-- https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/userProfile.html -->
-    <!-- https://developers.weixin.qq.com/miniprogram/dev/api/open-api/user-info/wx.getUserProfile.html -->
+    <!-- header -->
     <view :class="styles['header']">
       <view :class="styles['header-mine']">
         <button :class="styles['avatar-wrapper']" open-type="chooseAvatar" v-on:chooseavatar="onChooseAvatar">
@@ -30,7 +32,28 @@
       </view>
     </view>
 
+    <!-- main container -->
     <view :class="styles['main-container']">
+      <view :class="styles['header-shops-list']">
+        <view :class="styles['hearder-func-bars']">
+          <view
+            v-for="shop in funtionalBars.shops"
+            :key="shop.text"
+            :style="{ color: shop.color }"
+            :class="styles['hearder-func-bars__item']"
+          >
+            <nut-icon
+              font-class-name="iconfont"
+              class-prefix="icon"
+              :name="shop.icon"
+              :size="shop.size"
+              :color="shop.color"
+            ></nut-icon>
+            <text :class="styles['hearder-func-bars__text']">{{ shop.text }}</text>
+          </view>
+        </view>
+      </view>
+
       <view :class="styles['header-shops-list']">
         <view :class="styles['hearder-func-bars']">
           <view
