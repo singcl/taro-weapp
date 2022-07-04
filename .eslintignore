@@ -2,3 +2,6 @@
 src/index.html
 stylelint.config.js
 coverage
+
+#
+src/assets/
