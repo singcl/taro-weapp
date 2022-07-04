@@ -12,6 +12,7 @@ const config = {
   },
   alias: {
     '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/styles': path.resolve(__dirname, '..', 'src/styles'),
     '@/stores': path.resolve(__dirname, '..', 'src/stores'),
     '@/utils': path.resolve(__dirname, '..', 'src/utils'),
     '@/assets': path.resolve(__dirname, '..', 'src/assets'),
