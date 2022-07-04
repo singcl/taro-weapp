@@ -15,15 +15,17 @@
           <nut-button size="mini" :class="styles['header-info__settings']">账户设置</nut-button>
         </view>
       </view>
-      <view :class="styles['hearder-func-bars']">
-        <view
-          v-for="bar in funtionalBars.bars"
-          :key="bar.text"
-          :style="{ color: bar.color }"
-          :class="styles['hearder-func-bars__item']"
-        >
-          <nut-icon :name="bar.icon" :size="bar.size" :color="bar.color"></nut-icon>
-          <text :class="styles['hearder-func-bars__text']">{{ bar.text }}</text>
+      <view :class="styles['hearder-func-bars-wrapper']">
+        <view :class="styles['hearder-func-bars']">
+          <view
+            v-for="bar in funtionalBars.bars"
+            :key="bar.text"
+            :style="{ color: bar.color }"
+            :class="styles['hearder-func-bars__item']"
+          >
+            <nut-icon :name="bar.icon" :size="bar.size" :color="bar.color"></nut-icon>
+            <text :class="styles['hearder-func-bars__text']">{{ bar.text }}</text>
+          </view>
         </view>
       </view>
     </view>
@@ -36,7 +38,13 @@
           :style="{ color: shop.color }"
           :class="styles['hearder-func-bars__item']"
         >
-          <nut-icon :name="shop.icon" :size="shop.size" :color="shop.color"></nut-icon>
+          <nut-icon
+            font-class-name="iconfont"
+            class-prefix="icon"
+            :name="shop.icon"
+            :size="shop.size"
+            :color="shop.color"
+          ></nut-icon>
           <text :class="styles['hearder-func-bars__text']">{{ shop.text }}</text>
         </view>
       </view>
@@ -87,17 +95,17 @@ function onChooseAvatar(e: any) {
 //
 const funtionalBars = reactive({
   bars: [
-    { icon: 'star', text: '收藏', color: '#2c2817', size: '18' },
-    { icon: 'eye', text: '关注公众号', color: '#2c2817', size: '18' },
-    { icon: 'service', text: '客服', color: '#2c2817', size: '18' },
-    { icon: 'dshop', text: '红包卡券', color: '#2c2817', size: '18' },
+    { icon: 'star', text: '收藏', color: '#2c2817', size: '20' },
+    { icon: 'eye', text: '关注公众号', color: '#2c2817', size: '20' },
+    { icon: 'service', text: '客服', color: '#2c2817', size: '20' },
+    { icon: 'dshop', text: '红包卡券', color: '#2c2817', size: '20' },
   ],
   shops: [
-    { icon: 'star', text: '我的订单', color: '#474747', size: '18' },
-    { icon: 'eye', text: '待付款', color: '#474747', size: '18' },
-    { icon: 'service', text: '待使用', color: '#474747', size: '18' },
-    { icon: 'dshop', text: '待评价', color: '#474747', size: '18' },
-    { icon: 'dshop', text: '退款/售后', color: '#474747', size: '18' },
+    { icon: 'dingdan', text: '我的订单', color: '#ff8201', size: '26' },
+    { icon: 'daifukuan', text: '待付款', color: '#ff8201', size: '26' },
+    { icon: 'daishouhuo', text: '待收货', color: '#ff8201', size: '26' },
+    { icon: 'daipingjia', text: '待评价', color: '#ff8201', size: '26' },
+    { icon: 'shouhou', text: '退款/售后', color: '#ff8201', size: '26' },
   ],
 });
 
