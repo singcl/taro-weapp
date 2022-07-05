@@ -9,6 +9,9 @@ test('it should work', async () => {
     props: {
       /* ... */
     },
+    slots: {
+      default: 'This is a slot',
+    },
   });
 
   // TODO 插槽 Test
