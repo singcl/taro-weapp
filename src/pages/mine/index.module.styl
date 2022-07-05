@@ -1,6 +1,9 @@
 @import "~@/styles/theme/vars"
 
+$card-bottom = 16px
+
 .wrapper
+  position relative
   padding 0
   background-color #f8f8f8
 
@@ -69,6 +72,7 @@
   display flex
   align-items center
   justify-content space-between
+  padding-top 8px
 
   &__item
     display flex
@@ -81,7 +85,35 @@
 
 .main-container
   margin 0 20px
-
-.header-shops-list
   position relative
   top -60px
+
+.header-shops-list
+  margin-bottom $card-bottom
+
+.wallet-card
+  margin-bottom $card-bottom
+
+.wallet-card-header
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 24px
+
+  &__title
+    font-size 32px
+    font-weight bold
+
+  &__enter
+    display flex
+    align-items center
+    color #a5a5a5
+
+
+.footer
+  position absolute
+  color #a5a5a5
+  text-align center
+  bottom 30px
+  width 100%
+  transform translateY(50%)

@@ -53,6 +53,19 @@
           </view>
         </view>
       </XmSimpleCard>
+
+      <XmSimpleCard :class="styles['wallet-card']">
+        <view>
+          <view :class="styles['wallet-card-header']">
+            <text :class="styles['wallet-card-header__title']">我的钱包</text>
+            <view :class="styles['wallet-card-header__enter']">
+              <text>进入钱包</text>
+              <nut-icon name="arrow-right"></nut-icon>
+            </view>
+          </view>
+          <view :class="styles['wallet-card-menu']"></view>
+        </view>
+      </XmSimpleCard>
     </view>
 
     <!-- <input type="nickname" placeholder="请输入昵称" /> -->
@@ -71,6 +84,11 @@
     <!-- https://developers.weixin.qq.com/community/develop/doc/000e881c7046a8fa1f4d464105b001 -->
     <!-- <open-data type="userAvatarUrl"></open-data> -->
     <!-- <open-data type="userNickName"></open-data> -->
+
+    <!-- footer -->
+    <view :class="styles['footer']">
+      <text>https://github.com/singcl</text>
+    </view>
   </view>
 </template>
 
