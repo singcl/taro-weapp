@@ -1,6 +1,8 @@
 <template>
   <view :class="styles['wrapper']">
-    <slot></slot>
+    <numberical number="12.3" unit="元" />
+    <text>{{ title ?? '-' }}</text>
+    <text>{{ desc ?? '-' }}</text>
   </view>
 </template>
 
@@ -12,5 +14,14 @@ export default defineComponent({
 </script>
 
 <script lang="ts" setup>
+import Numberical from './Numberical/numberical.vue';
 import styles from './xmWallet.module.styl';
+
+interface Props {
+  number?: number;
+  unit?: string;
+  title?: string;
+  desc?: string;
+}
+defineProps<Props>();
 </script>
