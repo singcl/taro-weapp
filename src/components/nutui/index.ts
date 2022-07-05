@@ -1,9 +1,9 @@
 import type { App } from 'vue';
 // 定制化主题必须使用 scss
 import '@nutui/nutui-taro/dist/styles/themes/default.scss';
-import { Button, Cell, Icon, Form, FormItem, CellGroup, TextArea, Avatar } from '@nutui/nutui-taro';
+import { Button, Cell, Icon, Form, FormItem, CellGroup, TextArea, Avatar, Badge } from '@nutui/nutui-taro';
 
-const components = [Button, Cell, Icon, Form, FormItem, CellGroup, TextArea, Avatar];
+const components = [Button, Cell, Icon, Form, FormItem, CellGroup, TextArea, Avatar, Badge];
 
 export default class NutUI {
   static install(Vue: App<Element> /* options */) {

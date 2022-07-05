@@ -1,8 +1,10 @@
 <template>
   <view :class="styles['wrapper']">
     <numberical number="12.3" unit="元" />
-    <text>{{ title ?? '-' }}</text>
-    <text>{{ desc ?? '-' }}</text>
+    <view :class="styles['descriptions']">
+      <text>{{ title ?? '-' }}</text>
+      <text>{{ desc ?? '-' }}</text>
+    </view>
   </view>
 </template>
 

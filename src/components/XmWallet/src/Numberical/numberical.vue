@@ -1,7 +1,11 @@
 <template>
   <view :class="styles['wrapper']">
-    <text>{{ number ?? 0 }}</text>
-    <text>{{ unit ?? '-' }}</text>
+    <nut-badge value="101">
+      <view>
+        <text>{{ number ?? 0 }}</text>
+        <text>{{ unit ?? '-' }}</text>
+      </view>
+    </nut-badge>
   </view>
 </template>
 
