@@ -15,7 +15,6 @@ export default defineComponent({
     // 登录
     await API.auth.TaroLogin();
     const { data } = await API.auth.detail();
-    // TODO 获取用户信息
     const auth = useAuth();
     auth.$patch({
       userInfo: {

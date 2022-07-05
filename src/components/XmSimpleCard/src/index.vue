@@ -13,5 +13,4 @@ export default defineComponent({
 
 <script lang="ts" setup>
 import styles from './xmSimpleCard.module.styl';
-// TODO its value not never used
 </script>
