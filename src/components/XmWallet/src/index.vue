@@ -1,6 +1,6 @@
 <template>
   <view :class="styles['wrapper']">
-    <numberical number="12.3" unit="元" />
+    <numberical :number="12.3" unit="元" />
     <view :class="styles['descriptions']">
       <text>{{ title ?? '-' }}</text>
       <text>{{ desc ?? '-' }}</text>
