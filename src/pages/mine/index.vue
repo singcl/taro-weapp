@@ -64,7 +64,19 @@
             </view>
           </view>
           <view :class="styles['wallet-card-menu']">
-            <xm-wallet :number="22.5" unit="元" :value="12" title="最高可领" desc="天天提现"></xm-wallet>
+            <view
+              v-for="(wallet, index) in funtionalBars.wallets"
+              :key="index"
+              :class="styles['wallet-card-menu__item']"
+            >
+              <xm-wallet
+                :number="wallet.number"
+                :unit="wallet.unit"
+                :value="wallet.value"
+                :title="wallet.title"
+                :desc="wallet.desc"
+              ></xm-wallet>
+            </view>
           </view>
         </view>
       </XmSimpleCard>
@@ -132,6 +144,13 @@ const funtionalBars = reactive({
     { icon: 'daishouhuo', text: '待收货', color: '#ff8201', size: '26' },
     { icon: 'daipingjia', text: '待评价', color: '#ff8201', size: '26' },
     { icon: 'shouhou', text: '退款/售后', color: '#ff8201', size: '26' },
+  ],
+
+  wallets: [
+    { number: 22.5, unit: '万', value: 101, title: '借钱', desc: '大约可借' },
+    { number: 7, unit: '月', value: 0, title: '消费账单', desc: '待订阅' },
+    { number: 5.04, unit: '元', value: 0, title: '最高可领', desc: '比比返现' },
+    { number: 13.8, unit: '元', value: 0, title: '我的账单', desc: '最近支付' },
   ],
 });
 
