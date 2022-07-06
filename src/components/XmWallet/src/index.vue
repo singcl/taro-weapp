@@ -2,8 +2,8 @@
   <view :class="styles['wrapper']">
     <numberical :number="number" :unit="unit" :max="max" :value="value" />
     <view :class="styles['descriptions']">
-      <text>{{ title ?? '-' }}</text>
-      <text>{{ desc ?? '-' }}</text>
+      <text :class="styles['descriptions__title']">{{ title ?? '-' }}</text>
+      <text :class="styles['descriptions__desc']">{{ desc ?? '-' }}</text>
     </view>
   </view>
 </template>
