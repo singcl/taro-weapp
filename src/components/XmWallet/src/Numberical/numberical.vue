@@ -1,9 +1,9 @@
 <template>
   <view :class="styles['wrapper']">
     <nut-badge value="101">
-      <view>
-        <text>{{ number ?? 0 }}</text>
-        <text>{{ unit ?? '-' }}</text>
+      <view :class="styles['numberical']">
+        <text :class="styles['numberical-num']">{{ number ?? 0 }}</text>
+        <text :class="styles['numberical-unit']">{{ unit ?? '-' }}</text>
       </view>
     </nut-badge>
   </view>
