@@ -80,6 +80,24 @@
           </view>
         </view>
       </XmSimpleCard>
+
+      <xm-simple-card :class="styles['mine-nut-swiper-wrapper']">
+        <nut-swiper
+          :init-page="funtionalBars.page"
+          :pagination-visible="true"
+          pagination-color="#426543"
+          auto-play="3000"
+          :class="styles['mine-nut-swiper']"
+        >
+          <nut-swiper-item
+            v-for="(img, index) in funtionalBars.imgs"
+            :key="index"
+            :class="styles['mine-nut-swiper__item']"
+          >
+            <img :class="styles['mine-nut-swiper__img']" :src="img.url" alt="" />
+          </nut-swiper-item>
+        </nut-swiper>
+      </xm-simple-card>
     </view>
 
     <!-- <input type="nickname" placeholder="请输入昵称" /> -->
@@ -151,6 +169,14 @@ const funtionalBars = reactive({
     { number: 7, unit: '月', value: 0, title: '消费账单', desc: '待订阅' },
     { number: 5.04, unit: '元', value: 0, title: '最高可领', desc: '比比返现' },
     { number: 13.8, unit: '元', value: 0, title: '我的账单', desc: '最近支付' },
+  ],
+  //
+  page: 2,
+  imgs: [
+    { url: 'https://storage.360buyimg.com/jdc-article/NutUItaro34.jpg' },
+    { url: 'https://storage.360buyimg.com/jdc-article/NutUItaro2.jpg' },
+    { url: 'https://storage.360buyimg.com/jdc-article/welcomenutui.jpg' },
+    { url: 'https://storage.360buyimg.com/jdc-article/fristfabu.jpg' },
   ],
 });
 
