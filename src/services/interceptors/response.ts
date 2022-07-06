@@ -1,3 +1,4 @@
+import { LOGIN_TOKEN } from '@/constants';
 import Taro, { Chain, RequestTask } from '@tarojs/taro';
 
 import { Code } from './../code/code';
@@ -12,6 +13,9 @@ export default async function headersInterceptor(chain: Chain) {
       title: ZhCnText[statusCode],
       icon: 'error',
     });
+    if (statusCode === Code.HTTP_LOGIN_EXPIRE) {
+      Taro.removeStorageSync(LOGIN_TOKEN);
+    }
     return Promise.reject(ZhCnText[statusCode]);
   }
 

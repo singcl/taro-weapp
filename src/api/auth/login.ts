@@ -1,5 +1,6 @@
 import Taro from '@tarojs/taro';
 import { BASE_URL } from '@/config';
+import { LOGIN_TOKEN } from '@/constants';
 
 interface LoginParams {
   code: string;
@@ -21,7 +22,7 @@ export async function login(data: LoginParams) {
 export async function TaroLogin() {
   try {
     await Taro.checkSession();
-    const token = Taro.getStorageSync('token');
+    const token = Taro.getStorageSync(LOGIN_TOKEN);
     return token ? token : await Promise.reject(null);
   } catch (err) {
     const { code } = await Taro.login();
@@ -29,7 +30,7 @@ export async function TaroLogin() {
       data: { token },
     } = await login({ code });
     //
-    Taro.setStorageSync('token', token);
+    Taro.setStorageSync(LOGIN_TOKEN, token);
     Taro.showToast({
       title: `登录成功`,
       icon: 'success',
