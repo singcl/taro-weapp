@@ -150,6 +150,14 @@ Test Resource and [coverage](https://github.com/bcoe/c8/blob/main/.github/workfl
 
 [vite](https://vitejs.cn/guide/#command-line-interface)
 
+## Preview
+
+- [ ] 个人中心
+
+紧锣密鼓地开发中💥...
+
+![mine-center](./preview/mine-center.jpg)
+
 ## Inspired
 
 inspired by [taro-vue3](https://github.com/wlllyfor/taro-vue3.git)
