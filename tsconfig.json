@@ -18,7 +18,7 @@
     "jsx": "preserve",
     "allowJs": true,
     "resolveJsonModule": true,
-    "typeRoots": ["node_modules/@types", "global.d.ts", "typings"],
+    "typeRoots": ["node_modules/@types", "global.d.ts", "typings/*.d.ts"],
     "paths": {
       "@/*": ["src/*"],
       "@/components/*": ["./src/components/*"],
