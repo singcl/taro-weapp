@@ -1,9 +1,9 @@
 <template>
   <view :class="styles['wrapper']">
-    <nut-badge value="101">
+    <nut-badge :value="value ?? 0" :max="max ?? 99" right="20">
       <view :class="styles['numberical']">
-        <text :class="styles['numberical-num']">{{ number ?? 0 }}</text>
-        <text :class="styles['numberical-unit']">{{ unit ?? '-' }}</text>
+        <text :class="styles['numberical-num']">{{ number ?? 0.0 }}</text>
+        <text :class="styles['numberical-unit']">{{ unit ?? '元' }}</text>
       </view>
     </nut-badge>
   </view>
@@ -17,10 +17,12 @@ export default defineComponent({
 </script>
 
 <script setup lang="ts">
-import styles from './numberical.styl';
+import styles from './numberical.module.styl';
 interface Props {
   number?: number;
   unit?: string;
+  value?: number | string;
+  max?: number;
 }
 defineProps<Props>();
 </script>

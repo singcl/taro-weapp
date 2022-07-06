@@ -1,6 +1,6 @@
 <template>
   <view :class="styles['wrapper']">
-    <numberical :number="12.3" unit="元" />
+    <numberical :number="number" :unit="unit" :max="max" :value="value" />
     <view :class="styles['descriptions']">
       <text>{{ title ?? '-' }}</text>
       <text>{{ desc ?? '-' }}</text>
@@ -20,6 +20,8 @@ import Numberical from './Numberical/numberical.vue';
 import styles from './xmWallet.module.styl';
 
 interface Props {
+  value?: number | string;
+  max?: number;
   number?: number;
   unit?: string;
   title?: string;

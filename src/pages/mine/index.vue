@@ -64,7 +64,7 @@
             </view>
           </view>
           <view :class="styles['wallet-card-menu']">
-            <xm-wallet :number="22.5" unit="元" title="最高可领" desc="天天提现"></xm-wallet>
+            <xm-wallet :number="22.5" unit="元" :value="12" title="最高可领" desc="天天提现"></xm-wallet>
           </view>
         </view>
       </XmSimpleCard>
