@@ -1,6 +1,6 @@
 <template>
   <view :class="styles['wrapper']">
-    <nut-badge :value="value ?? 0" :max="max ?? 99" right="20">
+    <nut-badge :value="value ?? 0" :max="max ?? 99" right="10" :class="styles['nut-badge']">
       <view :class="styles['numberical']">
         <text :class="styles['numberical-num']">{{ number ?? 0.0 }}</text>
         <text :class="styles['numberical-unit']">{{ unit ?? '元' }}</text>

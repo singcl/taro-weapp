@@ -2,6 +2,14 @@
   position relative
   margin-bottom 20px
 
+.nut-badge
+  position relative
+
+  // about :global :local @see https://github.com/webpack-contrib/css-loader
+  // stylelint-disable-next-line selector-class-pattern
+  :global(.nut-badge__content.sup)
+    font-size 10PX
+
 .numberical-num
   font-weight bold
   font-size 32px

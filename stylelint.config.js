@@ -22,5 +22,7 @@ module.exports = {
   rules: {
     // override/add rules settings here, such as:
     // "stylus/declaration-colon": "never"
+    // @see https://stylelint.io/user-guide/rules/list/selector-pseudo-class-no-unknown/#ignorepseudoclasses-regex-string
+    'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global', 'local'] }],
   },
 };
