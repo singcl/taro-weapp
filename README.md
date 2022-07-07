@@ -9,6 +9,16 @@
 
 小程序后端服务[gin-taro-api](https://github.com/singcl/gin-taro-api)基于`go 1.18+`编写。
 
+## Preview
+
+- [ ] 个人中心
+
+紧锣密鼓地开发中 💥...
+
+|                 个人中心                  |                  个人中心                  |
+| :---------------------------------------: | :----------------------------------------: |
+| ![mine-center](./preview/mine-center.jpg) | ![mine-center](./preview/mine-center2.jpg) |
+
 ## Eslint
 
 项目配置完整的 eslint 检查，prettier 格式化规则，并且相互兼容。
@@ -151,16 +161,6 @@ Test Resource and [coverage](https://github.com/bcoe/c8/blob/main/.github/workfl
 [Vitest](https://cn.vitest.dev/guide/ide.html#vs-code) Vitest 需要 Vite >=v2.7.10 和 Node >=v14
 
 [vite](https://vitejs.cn/guide/#command-line-interface)
-
-## Preview
-
-- [ ] 个人中心
-
-紧锣密鼓地开发中 💥...
-
-|                 个人中心                  |                  个人中心                  |
-| :---------------------------------------: | :----------------------------------------: |
-| ![mine-center](./preview/mine-center.jpg) | ![mine-center](./preview/mine-center2.jpg) |
 
 ## Inspired
 
