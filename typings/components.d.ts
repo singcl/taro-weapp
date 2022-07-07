@@ -7,6 +7,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     XmWallet: typeof import('./../src/components/XmWallet')['default'];
     XmSimpleCard: typeof import('./../src/components/XmSimpleCard')['default'];
+    XmActivities: typeof import('./../src/components/XmActivities')['default'];
     // Footer: typeof import('./components/Footer.vue')['default'];
     // README: typeof import('./components/README.md')['default'];
     // RouterLink: typeof import('vue-router')['RouterLink'];
