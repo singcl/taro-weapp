@@ -98,6 +98,14 @@
           </nut-swiper-item>
         </nut-swiper>
       </xm-simple-card>
+
+      <xm-simple-card :class="styles['activities-wrapper']">
+        <XmActivities :activities="funtionalBars.activities" />
+      </xm-simple-card>
+
+      <xm-simple-card :class="styles['activities-wrapper']">
+        <XmActivities :activities="funtionalBars.activities2" />
+      </xm-simple-card>
     </view>
 
     <!-- <input type="nickname" placeholder="请输入昵称" /> -->
@@ -177,6 +185,25 @@ const funtionalBars = reactive({
     { url: 'https://storage.360buyimg.com/jdc-article/NutUItaro2.jpg' },
     { url: 'https://storage.360buyimg.com/jdc-article/welcomenutui.jpg' },
     { url: 'https://storage.360buyimg.com/jdc-article/fristfabu.jpg' },
+  ],
+
+  activities: [
+    { icon: 'dingdan', value: '红包', title: '我的订单', color: '#ff8201', size: '28' },
+    { icon: 'daifukuan', value: '现金', title: '待付款', color: '#ff8201', size: '28' },
+    { icon: 'daishouhuo', title: '待收货', color: '#ff8201', size: '28' },
+    { icon: 'daipingjia', title: '待评价', color: '#ff8201', size: '28' },
+    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
+    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
+    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
+  ],
+  activities2: [
+    { icon: 'dingdan', value: '红包', title: '我的订单', color: '#ff8201', size: '28' },
+    { icon: 'daifukuan', value: '现金', title: '待付款', color: '#ff8201', size: '28' },
+    { icon: 'daishouhuo', title: '待收货', color: '#ff8201', size: '28' },
+    { icon: 'daipingjia', title: '待评价', color: '#ff8201', size: '28' },
+    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
+    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
+    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
   ],
 });
 
