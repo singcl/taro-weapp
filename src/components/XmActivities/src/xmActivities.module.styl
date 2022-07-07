@@ -2,15 +2,27 @@
 
 .wrapper
   position relative
+  display flex
+  align-items center
+  justify-content space-between
+  flex-wrap wrap
 
 .activity
   display flex
   align-items center
   flex-direction column
+  width 20%
+  margin-bottom 16px
 
-  &__badage
+  &__badge
     margin-bottom 8px
+    position relative
+
+    // about :global :local @see https://github.com/webpack-contrib/css-loader
+    // stylelint-disable-next-line selector-class-pattern
+    :global(.nut-badge__content.sup)
+      font-size 10PX
+      white-space nowrap
 
   &__title
-    font-size 20px
-    color #a5a5a5
+    position relative

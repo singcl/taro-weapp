@@ -29,7 +29,7 @@ interface Activity {
   value?: number | string;
   max?: number;
   icon?: string;
-  size?: number;
+  size?: number | string;
   color?: string;
   title?: string;
 }
