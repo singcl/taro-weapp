@@ -12,10 +12,7 @@ describe('XmActivities Props', () => {
   test('Default Props', async () => {
     render(XmActivities, { props: { activities: [] } });
   });
-});
-
-describe('XmActivities activities Props', () => {
-  test('Default Props', async () => {
+  test('Activities Props', async () => {
     const { getByText } = render(XmActivities, { props: { activities: activities } });
     getByText('我的订单');
     getByText('待付款');
