@@ -134,7 +134,9 @@ npm run release
 
 ## CHANGELOG
 
-[CHANGELOG](./CHANGELOG.md) is here.[commitizen](https://github.com/commitizen/cz-cli),[husky](https://github.com/typicode/husky),[conventional-changelog](https://github.com/conventional-changelog/conventional-changelog),[standard-version](https://github.com/conventional-changelog/standard-version) is very usefull for this project quality.
+[CHANGELOG](./CHANGELOG.md) is here. current version [0.1.0-alpha.6](https://github.com/singcl/taro/compare/v0.1.0-alpha.5...v0.1.0-alpha.6) (2022-07-07).
+
+[commitizen](https://github.com/commitizen/cz-cli),[husky](https://github.com/typicode/husky),[conventional-changelog](https://github.com/conventional-changelog/conventional-changelog),[standard-version](https://github.com/conventional-changelog/standard-version) is very usefull for this project quality.
 
 ## NUTUI
 
@@ -154,9 +156,12 @@ Test Resource and [coverage](https://github.com/bcoe/c8/blob/main/.github/workfl
 
 - [ ] 个人中心
 
-紧锣密鼓地开发中💥...
+紧锣密鼓地开发中 💥...
 
-![mine-center](./preview/mine-center.jpg)
+|                                           |                                            |
+| ----------------------------------------- | ------------------------------------------ |
+| ![mine-center](./preview/mine-center.jpg) | ![mine-center](./preview/mine-center2.jpg) |
+
 
 ## Inspired
 
