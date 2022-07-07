@@ -4,15 +4,11 @@ import { render } from '@testing-library/vue';
 import XmSimpleCard from '@/components/XmSimpleCard';
 
 //
-test('it should work', async () => {
-  render(XmSimpleCard, {
-    props: {
-      /* ... */
-    },
+test('Layout default slot', async () => {
+  const { getByText } = render(XmSimpleCard, {
     slots: {
-      default: 'This is a slot',
+      default: 'THIS IS A DEFAULT SLOT',
     },
   });
-
-  // TODO 插槽 Test
+  getByText('THIS IS A DEFAULT SLOT');
 });
