@@ -175,7 +175,7 @@ const funtionalBars = reactive({
   wallets: [
     { number: 22.5, unit: '万', value: 101, title: '借钱', desc: '大约可借' },
     { number: 7, unit: '月', value: 0, title: '消费账单', desc: '待订阅' },
-    { number: 5.04, unit: '元', value: 0, title: '最高可领', desc: '比比返现' },
+    { number: 5.04, unit: '元', value: 0, title: '最高可领', desc: '笔笔返现' },
     { number: 13.8, unit: '元', value: 0, title: '我的账单', desc: '最近支付' },
   ],
   //
