@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0-alpha.6](https://github.com/singcl/taro/compare/v0.1.0-alpha.5...v0.1.0-alpha.6) (2022-07-07)
+
+
+### Features
+
+* **componenst:** simple card component ([40896d8](https://github.com/singcl/taro/commit/40896d8b3d9873629a7db0441a53d60be901ef0b))
+* **components:** component XmActivities styles ([0058c37](https://github.com/singcl/taro/commit/0058c37d3481bc8f1b82e3ed3c9e0a1d8534199e))
+* **components:** global components define ([06950ce](https://github.com/singcl/taro/commit/06950cec936f4d4699846bebb64c0210acc28bda))
+* **components:** registy component XmActivities ([e160b53](https://github.com/singcl/taro/commit/e160b53d1d901931c149c9f741a01437bf0e4f80))
+* **components:** wallet components ([65d51b7](https://github.com/singcl/taro/commit/65d51b722b86f97c40354590b03a222925cea673))
+* **components:** XmActivities component ([b713fcd](https://github.com/singcl/taro/commit/b713fcd52ab1f2d804ed970812fdfb94366e728c))
+* **components:** XmActivities components ([f79c60d](https://github.com/singcl/taro/commit/f79c60d6d7d89a1854e715110b178321bc10d630))
+* **components:** XmWallet component ([66d3678](https://github.com/singcl/taro/commit/66d3678ea08e0107ca944259ff7040c8c64c6927))
+* **component:** XmWallet component ([5c356ab](https://github.com/singcl/taro/commit/5c356ab140d6d9e1d52e0cf32bc3cb5ab90515fd))
+* **componnets:** update components ([4d710f7](https://github.com/singcl/taro/commit/4d710f7e162184f89debae3d91741b4d335fb0cd))
+* **icons:** use iconfont font icons ([d745e51](https://github.com/singcl/taro/commit/d745e513d86ae3835a5a3b1365fe3add8ebf1b45))
+* **macro:** typescript config define macro ([1ed72f8](https://github.com/singcl/taro/commit/1ed72f8eb4ef81ce6a682eabaa336c1e498593b3))
+* **nutui:** nutui components ([33b5d83](https://github.com/singcl/taro/commit/33b5d831cb648b47c5fa8b64a7c414250f86b134))
+* **pages:** add new shops bars list ([b4cb5be](https://github.com/singcl/taro/commit/b4cb5be3ef6fe891c7222a67a8aaa3f13b09625a))
+* **pages:** center mine update ([06e97ab](https://github.com/singcl/taro/commit/06e97ab8064d699ba2c44504afefa1a1ff2dfecd))
+* **pages:** mine center layout complete ([d1064fd](https://github.com/singcl/taro/commit/d1064fd9a219b46c3e329ea386e6f44fcdef0e2b))
+* **pages:** mine center use iconfont icons ([d4688a1](https://github.com/singcl/taro/commit/d4688a1f2094a33bd4a493cbdbf948a45e86eba9))
+* **pages:** mine functional bars ([4f83998](https://github.com/singcl/taro/commit/4f83998299ec1adf0bd84fe410f5b18b000a8ba1))
+* **pages:** mine pages developing ([b99ff50](https://github.com/singcl/taro/commit/b99ff502b130460fe809e31b37f9684e486dd5d5))
+* **pages:** page card area ([e3aa126](https://github.com/singcl/taro/commit/e3aa126aeaeabff5535b54341c01a2cef4cce590))
+* **pages:** pages swiper components ([a9e4642](https://github.com/singcl/taro/commit/a9e46423c5cffc63bf2bba50111e5c86c9e13d20))
+* **pages:** wallet ([5ec6d30](https://github.com/singcl/taro/commit/5ec6d30fa43e4782f6e9de0ccb8f11b2fe99764c))
+* **pages:** wallet card main ([cd693a7](https://github.com/singcl/taro/commit/cd693a75b1b95f02d0a44f9c0dcb3ba339b72c7a))
+* **stylelint:** stylelint about :global :local ([d5ffbe3](https://github.com/singcl/taro/commit/d5ffbe3ce5b0cd7a6762c1cb62529c71acf8a127))
+* **types:** dom.weixin.d.ts ([47bb26f](https://github.com/singcl/taro/commit/47bb26fea31637d74c016cb3934a9e6c32a9782a))
+* **types:** GlobalComponents type definition ([c2403fa](https://github.com/singcl/taro/commit/c2403fa92aae936e78e7bdd3ca324761ae261222))
+
 ## [0.1.0-alpha.5](https://github.com/singcl/taro/compare/v0.1.0-alpha.4...v0.1.0-alpha.5) (2022-07-02)
 
 
