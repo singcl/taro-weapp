@@ -158,10 +158,9 @@ Test Resource and [coverage](https://github.com/bcoe/c8/blob/main/.github/workfl
 
 紧锣密鼓地开发中 💥...
 
-|                                           |                                            |
-| ----------------------------------------- | ------------------------------------------ |
+|                 个人中心                  |                  个人中心                  |
+| :---------------------------------------: | :----------------------------------------: |
 | ![mine-center](./preview/mine-center.jpg) | ![mine-center](./preview/mine-center2.jpg) |
-
 
 ## Inspired
 
