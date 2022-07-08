@@ -144,6 +144,17 @@ import { useAuth } from '@/stores';
 import { storeToRefs } from 'pinia';
 import styles from './index.module.styl';
 
+// TODO: 迁移至对象存储服务
+import AZhibo from '@/assets/font/icons/a-zhibo.png';
+import AReDian from '@/assets/font/icons/a-redian.png';
+import AVip from '@/assets/font/icons/a-vip.png';
+import AMianFei from '@/assets/font/icons/a-mianfei.png';
+import AMiaoSha from '@/assets/font/icons/a-miaosha.png';
+import ADaTi from '@/assets/font/icons/a-dati.png';
+import AQuan from '@/assets/font/icons/a-quan.png';
+import AYinYue from '@/assets/font/icons/a-yinyue.png';
+import ACherry from '@/assets/font/icons/a-cherry.png';
+
 //
 const auth = useAuth();
 
@@ -188,22 +199,27 @@ const funtionalBars = reactive({
   ],
 
   activities: [
-    { icon: 'dingdan', value: '红包', title: '我的订单', color: '#ff8201', size: '28' },
-    { icon: 'daifukuan', value: '现金', title: '待付款', color: '#ff8201', size: '28' },
-    { icon: 'daishouhuo', title: '待收货', color: '#ff8201', size: '28' },
-    { icon: 'daipingjia', title: '待评价', color: '#ff8201', size: '28' },
-    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
-    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
-    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
+    { icon: AVip, title: '天天赚钱', size: '30', value: '红包' },
+    { icon: AMianFei, title: '免费抽奖', size: '30', value: '现金' },
+    { icon: AZhibo, title: '贪吃蛇', size: '30' },
+    { icon: AReDian, title: '免费领鸡蛋', size: '30' },
+    { icon: AMiaoSha, title: '限时秒杀', size: '30' },
+    { icon: ADaTi, title: '答题领红包', size: '30' },
+    { icon: AQuan, title: '免费看小说', size: '30' },
+    { icon: AYinYue, title: '锦鲤迎红包', size: '30' },
+    { icon: ACherry, title: '保卫果园', size: '30' },
   ],
   activities2: [
-    { icon: 'dingdan', value: '红包', title: '我的订单', color: '#ff8201', size: '28' },
-    { icon: 'daifukuan', value: '现金', title: '待付款', color: '#ff8201', size: '28' },
-    { icon: 'daishouhuo', title: '待收货', color: '#ff8201', size: '28' },
-    { icon: 'daipingjia', title: '待评价', color: '#ff8201', size: '28' },
-    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
-    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
-    { icon: 'shouhou', title: '退款/售后', color: '#ff8201', size: '28' },
+    { icon: 'a-iconshehuijiuzhu', title: '合作与招聘', color: '#ff5000', size: '28', value: '红包' },
+    { icon: 'a-iconliudongrenkou', title: '团长招募', color: '#ff5000', size: '28', value: '现金' },
+    { icon: 'a-iconshengtaihuanbao', title: '充电宝加盟', color: '#ff5000', size: '28' },
+    { icon: 'a-iconcanyin', title: '赚佣金', color: '#ff5000', size: '28' },
+    { icon: 'a-iconchengshitizhengchanyeyuanqushubeifen', title: '企业服务', color: '#ff5000', size: '28' },
+    { icon: 'a-iconbangongchangsuo', title: '我的店铺', color: '#ff5000', size: '28' },
+    { icon: 'a-iconshengchanshuishou', title: '借钱', color: '#ff5000', size: '28' },
+    { icon: 'a-iconbieshu', title: '民宿入住', color: '#ff5000', size: '28' },
+    { icon: 'a-icongongyuan', title: '公益', color: '#ff5000', size: '28' },
+    { icon: 'a-iconguishangqiye', title: '规则中心', color: '#ff5000', size: '28' },
   ],
 });
 
