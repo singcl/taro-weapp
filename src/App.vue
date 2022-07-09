@@ -14,7 +14,12 @@ export default defineComponent({
   async onLaunch() {
     // 登录
     await API.auth.TaroLogin();
-    const { data } = await API.auth.detail();
+    const {
+      data: { data },
+    } = await API.auth.detail();
+    if (!data) {
+      return Promise.reject(null);
+    }
     const auth = useAuth();
     auth.$patch({
       userInfo: {

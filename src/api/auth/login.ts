@@ -12,7 +12,7 @@ interface LoginResponse {
 
 // 开发者服务器登录接口
 export async function login(data: LoginParams) {
-  return Taro.request<LoginResponse, LoginParams>({
+  return Taro.request<HttpStandardResponse<LoginResponse>, LoginParams>({
     url: `${BASE_URL}/weixin/login`,
     data,
   });
@@ -27,9 +27,13 @@ export async function TaroLogin() {
   } catch (err) {
     const { code } = await Taro.login();
     const {
-      data: { token },
+      data: { data },
     } = await login({ code });
+    if (!data) {
+      return Promise.reject(null);
+    }
     //
+    const { token } = data;
     Taro.setStorageSync(LOGIN_TOKEN, token);
     Taro.showToast({
       title: `登录成功`,

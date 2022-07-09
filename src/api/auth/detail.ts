@@ -10,7 +10,7 @@ interface DetailResponse {
 
 // 开发者服务器登录接口
 export async function detail() {
-  return Taro.request<DetailResponse>({
+  return Taro.request<HttpStandardResponse<DetailResponse>>({
     url: `${BASE_URL}/weixin/auth/info`,
   });
 }
