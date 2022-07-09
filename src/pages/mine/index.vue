@@ -14,7 +14,9 @@
           <text :class="styles['header-info__nickname']">
             {{ nickname }}
           </text>
-          <nut-button size="mini" :class="styles['header-info__settings']">账户设置</nut-button>
+          <navigator url="/pages/mineSubPackages/pages/userSettings/index">
+            <nut-button size="mini" :class="styles['header-info__settings']">账户设置</nut-button>
+          </navigator>
         </view>
       </view>
       <view :class="styles['hearder-func-bars-wrapper']">

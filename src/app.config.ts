@@ -3,7 +3,7 @@ export default defineAppConfig({
   subPackages: [
     {
       root: 'pages/mineSubPackages/',
-      pages: ['pages/userSettings'],
+      pages: ['pages/userSettings/index'],
     },
   ],
   window: {
