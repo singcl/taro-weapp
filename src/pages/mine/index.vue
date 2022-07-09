@@ -146,7 +146,7 @@ import { useAuth } from '@/stores';
 import { storeToRefs } from 'pinia';
 import styles from './index.module.styl';
 
-// TODO: 迁移至对象存储服务
+// TODO: 迁移至对象存储服务 - 减少项目体积
 import AZhibo from '@/assets/font/icons/a-zhibo.png';
 import AReDian from '@/assets/font/icons/a-redian.png';
 import AVip from '@/assets/font/icons/a-vip.png';
