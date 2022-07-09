@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3499884 */
-  src: url('iconfont.woff2?t=1657302137659') format('woff2'),
-       url('iconfont.woff?t=1657302137659') format('woff'),
-       url('iconfont.ttf?t=1657302137659') format('truetype');
+  src: url('iconfont.woff2?t=1657351372893') format('woff2'),
+       url('iconfont.woff?t=1657351372893') format('woff'),
+       url('iconfont.ttf?t=1657351372893') format('truetype');
 }
 
 .iconfont {
@@ -13,8 +13,172 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-dianzan1:before {
-  content: "\e706";
+.icon-a-01pinglun1:before {
+  content: "\edb8";
+}
+
+.icon-a-02pinglun2:before {
+  content: "\edb9";
+}
+
+.icon-a-03anquan:before {
+  content: "\edba";
+}
+
+.icon-a-04dingwei:before {
+  content: "\edbb";
+}
+
+.icon-a-05shouji:before {
+  content: "\edbc";
+}
+
+.icon-a-06mima:before {
+  content: "\edbd";
+}
+
+.icon-a-08kefu:before {
+  content: "\edbe";
+}
+
+.icon-a-10daka:before {
+  content: "\edbf";
+}
+
+.icon-a-07biaoqian:before {
+  content: "\edc0";
+}
+
+.icon-a-09liwu:before {
+  content: "\edc1";
+}
+
+.icon-a-12sousuo:before {
+  content: "\edc2";
+}
+
+.icon-a-13shezhi:before {
+  content: "\edc3";
+}
+
+.icon-a-11shoucang:before {
+  content: "\edc4";
+}
+
+.icon-a-14naozhong:before {
+  content: "\edc5";
+}
+
+.icon-a-15dingdan2:before {
+  content: "\edc6";
+}
+
+.icon-a-16dingdan1:before {
+  content: "\edc7";
+}
+
+.icon-a-17paizhao:before {
+  content: "\edc8";
+}
+
+.icon-a-18faxian1:before {
+  content: "\edc9";
+}
+
+.icon-a-20daifukuan:before {
+  content: "\edca";
+}
+
+.icon-a-19faxian2:before {
+  content: "\edcb";
+}
+
+.icon-a-23:before {
+  content: "\edcc";
+}
+
+.icon-a-21tucao:before {
+  content: "\edcd";
+}
+
+.icon-a-22:before {
+  content: "\edce";
+}
+
+.icon-a-25wode2:before {
+  content: "\edcf";
+}
+
+.icon-a-24wode1:before {
+  content: "\edd0";
+}
+
+.icon-a-26wode3:before {
+  content: "\edd1";
+}
+
+.icon-a-28baowenbei:before {
+  content: "\edd2";
+}
+
+.icon-a-27ximiannai:before {
+  content: "\edd3";
+}
+
+.icon-a-29shouye1:before {
+  content: "\edd4";
+}
+
+.icon-a-30shouye2:before {
+  content: "\edd5";
+}
+
+.icon-a-31shouye3:before {
+  content: "\edd6";
+}
+
+.icon-a-32yaoqingma:before {
+  content: "\edd7";
+}
+
+.icon-lishi:before {
+  content: "\edd8";
+}
+
+.icon-zengjia:before {
+  content: "\edd9";
+}
+
+.icon-jianshao:before {
+  content: "\edda";
+}
+
+.icon-cuowu:before {
+  content: "\eddb";
+}
+
+.icon-zhengque:before {
+  content: "\eddc";
+}
+
+.icon-zhekou:before {
+  content: "\eddd";
+}
+
+.icon-gengduo:before {
+  content: "\edde";
+}
+
+.icon-jinbi:before {
+  content: "\eddf";
+}
+
+.icon-yingtao-01:before {
+  content: "\e693";
+}
+
+.icon-yingtao-01-copy:before {
+  content: "\eedd";
 }
 
 .icon-dianzishu:before {
@@ -91,6 +255,38 @@
 
 .icon-xiaoxi:before {
   content: "\e719";
+}
+
+.icon-zhibo1-copy:before {
+  content: "\eed5";
+}
+
+.icon-jinriredian-copy:before {
+  content: "\eed6";
+}
+
+.icon-huiyuandengji-copy:before {
+  content: "\eed7";
+}
+
+.icon-xianshimianfei-copy:before {
+  content: "\eed8";
+}
+
+.icon-jingxuan-copy:before {
+  content: "\eed9";
+}
+
+.icon-paihangbang-copy:before {
+  content: "\eeda";
+}
+
+.icon-youhui-copy:before {
+  content: "\eedb";
+}
+
+.icon-chaogaoyinzhi-copy:before {
+  content: "\eedc";
 }
 
 .icon-a-icon119:before {
