@@ -142,7 +142,7 @@ export default {
 
 <script setup lang="ts">
 import { reactive } from 'vue';
-import { useAuth } from '@/stores';
+import { useAuthStore } from '@/stores';
 import { storeToRefs } from 'pinia';
 import styles from './index.module.styl';
 
@@ -158,7 +158,7 @@ import AYinYue from '@/assets/font/icons/a-yinyue.png';
 import ACherry from '@/assets/font/icons/a-cherry.png';
 
 //
-const auth = useAuth();
+const auth = useAuthStore();
 
 // 获取微信头像
 // @see https://pinia.web3doc.top/core-concepts/#%E4%BD%BF%E7%94%A8-store

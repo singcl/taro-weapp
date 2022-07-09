@@ -1,7 +1,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import API from '@/api';
-import { useAuth } from '@/stores';
+import { useAuthStore } from '@/stores';
 import './app.styl';
 
 export default defineComponent({
@@ -20,8 +20,8 @@ export default defineComponent({
     if (!data) {
       return Promise.reject(null);
     }
-    const auth = useAuth();
-    auth.$patch({
+    const authStore = useAuthStore();
+    authStore.$patch({
       userInfo: {
         nickname: data.nickname,
         avatarUrl: data.avatar_url,

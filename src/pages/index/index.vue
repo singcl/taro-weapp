@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts">
-import { useAuth } from '@/stores';
+import { useAuthStore } from '@/stores';
 import { mapState, mapStores } from 'pinia';
 
 // import API from '@/api';
@@ -36,8 +36,8 @@ export default {
   computed: {
     styles: () => styles,
     // @see https://pinia.web3doc.top/cookbook/options-api.html#giving-access-to-the-whole-store
-    ...mapStores(useAuth),
-    ...mapState(useAuth, { token: (state) => state.token }),
+    ...mapStores(useAuthStore),
+    ...mapState(useAuthStore, { token: (state) => state.token }),
   },
   data() {
     return {
