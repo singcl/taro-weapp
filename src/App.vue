@@ -2,6 +2,7 @@
 import { defineComponent } from 'vue';
 import API from '@/api';
 import { useAuthStore } from '@/stores';
+import { LOGIN_STATUS } from '@/constants';
 import './app.styl';
 
 export default defineComponent({
@@ -13,14 +14,15 @@ export default defineComponent({
   //
   async onLaunch() {
     // 登录
+    const authStore = useAuthStore();
     await API.auth.TaroLogin();
+    authStore.$patch({ loginStatus: LOGIN_STATUS.LOGIN_ALREADY });
     const {
       data: { data },
     } = await API.auth.detail();
     if (!data) {
       return Promise.reject(null);
     }
-    const authStore = useAuthStore();
     authStore.$patch({
       userInfo: {
         nickname: data.nickname,

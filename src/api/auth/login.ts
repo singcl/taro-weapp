@@ -35,6 +35,7 @@ export async function TaroLogin() {
     //
     const { token } = data;
     Taro.setStorageSync(LOGIN_TOKEN, token);
+
     Taro.showToast({
       title: `登录成功`,
       icon: 'success',
