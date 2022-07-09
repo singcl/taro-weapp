@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  pages: ['pages/index/index', 'pages/functional/index', 'pages/mine/index'],
+  pages: ['pages/index/index', 'pages/found/index', 'pages/coin/index', 'pages/mine/index'],
   subPackages: [
     {
       root: 'pages/mineSubPackages/',
@@ -25,10 +25,16 @@ export default defineAppConfig({
         text: '首页',
       },
       {
-        pagePath: 'pages/functional/index',
-        iconPath: 'assets/icons/settings_default.png',
-        selectedIconPath: 'assets/icons/settings_selected.png',
-        text: '功能',
+        pagePath: 'pages/found/index',
+        iconPath: 'assets/icons/found_default.png',
+        selectedIconPath: 'assets/icons/found_selected.png',
+        text: '发现',
+      },
+      {
+        pagePath: 'pages/coin/index',
+        iconPath: 'assets/icons/coin_default.png',
+        selectedIconPath: 'assets/icons/coin_selected.png',
+        text: '赚钱',
       },
       {
         pagePath: 'pages/mine/index',
