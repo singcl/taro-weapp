@@ -145,6 +145,7 @@ import { reactive } from 'vue';
 import { useAuthStore } from '@/stores';
 import { storeToRefs } from 'pinia';
 import styles from './index.module.styl';
+import API from '@/api';
 
 // TODO: 迁移至对象存储服务 - 减少项目体积
 import AZhibo from '@/assets/font/icons/a-zhibo.png';
@@ -168,6 +169,7 @@ const nickname = storeToRefs(auth).nickname;
 function onChooseAvatar(e: any) {
   const { avatarUrl } = e.detail;
   auth.$patch({ userInfo: { avatarUrl: avatarUrl } });
+  API.avatar.upload(avatarUrl);
 }
 //
 const funtionalBars = reactive({
