@@ -3,6 +3,7 @@ import { defineComponent } from 'vue';
 import API from '@/api';
 import { useAuthStore } from '@/stores';
 import { LOGIN_STATUS } from '@/constants';
+import { ensureAvatarUrl } from '@/utils';
 import './app.styl';
 
 export default defineComponent({
@@ -26,7 +27,7 @@ export default defineComponent({
     authStore.$patch({
       userInfo: {
         nickname: data.nickname,
-        avatarUrl: data.avatar_url,
+        avatarUrl: ensureAvatarUrl(data.avatar_url),
         mobile: data.mobile,
         username: data.username,
       },
