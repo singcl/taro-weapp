@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0-alpha.7](https://github.com/singcl/taro/compare/v0.1.0-alpha.6...v0.1.0-alpha.7) (2022-07-23)
+
+
+### Features
+
+* **api:** api standard response json ([5df845f](https://github.com/singcl/taro/commit/5df845fd3609f1d6ee55cbf7256a91e040d7411b))
+* **api:** ensure login expired relogin once ([8909522](https://github.com/singcl/taro/commit/890952228adf6850d9347167d6f731ce90ecafe4))
+* **api:** update avatar api ([d3c58ad](https://github.com/singcl/taro/commit/d3c58ad5ae3b067e296e3222258d27de579511c5))
+* **code:** login expired code ([5d833f0](https://github.com/singcl/taro/commit/5d833f00654a0f52d9bcafe6d68168a268627671))
+* **icons:** add png icons ([30b7f2c](https://github.com/singcl/taro/commit/30b7f2c5a7fa66a70f4bf5ba1caa6dc31cecf7d0))
+* **icons:** update icons ([416c880](https://github.com/singcl/taro/commit/416c8803c0ec0db14b05519c264bb85c1e3c7414))
+* **icons:** update tabs icons ([3214cb5](https://github.com/singcl/taro/commit/3214cb5be19850a35caf020349eb6b9cc2395021))
+* **navigator:** navigator components use ([4d38632](https://github.com/singcl/taro/commit/4d3863261768aeeba83fbb40b6e0aadf4daed7cc))
+* **pages:** mine center activities icon ([0759aeb](https://github.com/singcl/taro/commit/0759aeb60ab0d2c246c0228aa1f0842132927027))
+* **pages:** subpackages page and config ([2d7a726](https://github.com/singcl/taro/commit/2d7a7269e92a40d6d390942bda8e922022cbbba7))
+* **store:** declaring this in function ([8b0c5ed](https://github.com/singcl/taro/commit/8b0c5ed1b40593f5af2d370eb9f637940a272093))
+* **tabs:** updata tabs ([2b677be](https://github.com/singcl/taro/commit/2b677bea7f81ef4fd4aca54478497555f179f16c))
+* **utils:** ensure avatar url ([efebf41](https://github.com/singcl/taro/commit/efebf41f80f88366d2845489b55cbdd7bf553b33))
+
+
+### Bug Fixes
+
+* **api:** wx avatar upload fail hander ([6960109](https://github.com/singcl/taro/commit/6960109920848338e43583c0b54bd73664410a8a))
+* **pages:** descrition fix ([7a45c56](https://github.com/singcl/taro/commit/7a45c5694011a9e5c8feeb5d7d332c591e4664ab))
+
 ## [0.1.0-alpha.6](https://github.com/singcl/taro/compare/v0.1.0-alpha.5...v0.1.0-alpha.6) (2022-07-07)
 
 

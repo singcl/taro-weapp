@@ -1,6 +1,6 @@
 {
   "name": "my-taro-app",
-  "version": "0.1.0-alpha.6",
+  "version": "0.1.0-alpha.7",
   "description": "一个vue3小程序",
   "templateInfo": {
     "name": "vue3-pinia",
