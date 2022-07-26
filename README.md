@@ -148,7 +148,7 @@ npm run release
 
 [commitizen](https://github.com/commitizen/cz-cli),[husky](https://github.com/typicode/husky),[conventional-changelog](https://github.com/conventional-changelog/conventional-changelog),[standard-version](https://github.com/conventional-changelog/standard-version) is very usefull for this project quality.
 
-## NUTUI
+## Nutui
 
 [使用 nutui 组件库](https://taro-docs.jd.com/taro/docs/nutui)
 
