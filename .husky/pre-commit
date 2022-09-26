@@ -3,14 +3,17 @@
 # @see https://blog.csdn.net/qq_37164975/article/details/106181500
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "😊😊 eslint..."
-npm run eslint
-echo "✨✨Eslint Success!"
+# echo "😊😊 eslint..."
+# npm run eslint
+# echo "✨✨Eslint Success!"
 
-echo "😊😊 Vue 3 command line Type-Checking tool base on IDE plugin Volar."
-npm run tsc
-echo "✨✨Type-Checking Success!"
+# echo "😊😊 Vue 3 command line Type-Checking tool base on IDE plugin Volar."
+# npm run tsc
+# echo "✨✨Type-Checking Success!"
 
-echo "😊😊 Stylelint..."
-npm run stylelint
-echo "✨✨Stylelint-Checking Success!"
+# echo "😊😊 Stylelint..."
+# npm run stylelint
+# echo "✨✨Stylelint-Checking Success!"
+
+#
+npm run lint-staged

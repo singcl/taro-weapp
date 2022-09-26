@@ -28,12 +28,24 @@
     "eslint": "eslint --ext .vue --ext .js --ext .jsx --ext .ts --ext .tsx src/",
     "stylelint": "stylelint **/*.{css,less,scss,styl}",
     "lint": "npm run eslint && npm run stylelint",
+    "lint-staged": "lint-staged --allow-empty",
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx,.vue",
     "prepare": "husky install",
     "tsc": "vue-tsc --noEmit --skipLibCheck",
     "cz": "cz",
     "release": "standard-version --prerelease alpha",
     "test": "vitest",
     "coverage": "vitest run --coverage"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,vue}": [
+      "npm run lint-staged:js",
+      "npm run tsc"
+    ],
+    "**/*.{less,css,scss}": "npm run stylelint",
+    "**/*.{js,jsx,ts,tsx,vue,less,css,md,json}": [
+      "prettier --write"
+    ]
   },
   "browserslist": [
     "last 3 versions",
@@ -88,7 +100,8 @@
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-vue": "^8.0.0",
     "happy-dom": "^6.0.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "postcss": "^8.4.14",
     "postcss-html": "^1.4.1",
     "postcss-scss": "^4.0.4",
