@@ -15,5 +15,5 @@
 # npm run stylelint
 # echo "✨✨Stylelint-Checking Success!"
 
-#
+# lint-staged lint staged区域的提交信息
 npm run lint-staged
