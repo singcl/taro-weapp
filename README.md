@@ -136,7 +136,7 @@ npm run cz
 
 ### changelog
 
-自动生成 changelog 和更新版本号
+自动生成 changelog 和更新版本号.
 
 ```sh
 npm run release
