@@ -6,7 +6,7 @@ https://git-scm.com/docs/git-config#_configuration_file
 > 文档-https://git-scm.com/docs/git-config#_configuration_file中描述了该格式。它没有特定的“标准”格式，只是git所期望的格式。
 > 它类似于ini文件，但不完全相同—有带引号的子部分和值。
 
-```git config --help``
+```git config --help```
 打开本地git config 帮助文档
 
 ```sh
@@ -26,4 +26,14 @@ git config --global https.proxy 127.0.0.1:1080
 # 删除代理
 git config --global --unset http.proxy
 git config --global --unset https.proxy
-``
+```
+
+git如何查看commit所属的分支
+```sh
+#查本地所有分支
+git branch --contains CommitID
+#查远程所有分支
+git branch -r --contains CommitID
+#查本地和远程的所有分支
+git branch -a --contains CommitID
+```
