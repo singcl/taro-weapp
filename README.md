@@ -18,6 +18,7 @@
 |                 个人中心                  |                  个人中心                  |
 | :---------------------------------------: | :----------------------------------------: |
 | ![mine-center](./preview/mine-center.jpg) | ![mine-center](./preview/mine-center2.jpg) |
+| ![mine-center](./preview/mine-center3.jpg) | - |
 
 ## Eslint
 
