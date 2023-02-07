@@ -1,4 +1,4 @@
-![ci](https://img.shields.io/github/workflow/status/singcl/taro-weapp/ci?label=ci&logo=github)
+![ci](https://img.shields.io/github/actions/workflow/status/singcl/taro-weapp/ci.yaml?branch=master&label=ci&logo=github)
 ![nycrc config on Github](https://img.shields.io/nycrc/singcl/taro-weapp?color=blue&config=.nycrc&label=nyc%20covrage)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
@@ -15,10 +15,10 @@
 
 紧锣密鼓地开发中 💥...
 
-|                 个人中心                  |                  个人中心                  |
-| :---------------------------------------: | :----------------------------------------: |
-| ![mine-center](./preview/mine-center.jpg) | ![mine-center](./preview/mine-center2.jpg) |
-| ![mine-center](./preview/mine-center3.jpg) | - |
+|                  个人中心                  |                  个人中心                  |
+| :----------------------------------------: | :----------------------------------------: |
+| ![mine-center](./preview/mine-center.jpg)  | ![mine-center](./preview/mine-center2.jpg) |
+| ![mine-center](./preview/mine-center3.jpg) |                     -                      |
 
 ## Eslint
 
